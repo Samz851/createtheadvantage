@@ -1,0 +1,20 @@
+<wpml-config>
+    <custom-fields>
+        <custom-field action="translate">_aside_posts</custom-field>
+        <custom-field action="translate">_image_posts</custom-field>
+        <custom-field action="translate">_quote_posts</custom-field>
+        <custom-field action="translate">_link_posts</custom-field>
+        <custom-field action="translate">_gallery_posts</custom-field>
+        <custom-field action="translate">_audio_posts</custom-field>
+        <custom-field action="translate">_video_posts</custom-field>
+    </custom-fields>
+   
+    <admin-texts>       
+            <key name="header" />
+            <key name="copy" />
+            <key name="blog-top"></key>
+    </admin-texts>    
+      
+</wpml-config>
+
+

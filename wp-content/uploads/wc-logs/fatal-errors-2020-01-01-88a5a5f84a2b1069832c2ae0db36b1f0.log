@@ -1,0 +1,23 @@
+2020-01-01T20:25:47+00:00 CRITICAL Cannot redeclare portfolio_map_section() (previously declared in C:\wamp64\www\createtheadvantage\wp-content\plugins\theme-elements\theme-elements-old.php:905)
+
+2020-01-01T20:26:01+00:00 CRITICAL Cannot redeclare portfolio_map_section() (previously declared in C:\wamp64\www\createtheadvantage\wp-content\plugins\theme-elements\theme-elements-old.php:905)
+
+2020-01-01T20:26:02+00:00 CRITICAL Cannot redeclare portfolio_map_section() (previously declared in C:\wamp64\www\createtheadvantage\wp-content\plugins\theme-elements\theme-elements-old.php:905)
+
+2020-01-01T20:32:12+00:00 CRITICAL Uncaught Error: Class 'Tribe__Events__Aggregator__Record__Facebook' not found in C:\wamp64\www\createtheadvantage\wp-content\plugins\the-events-calendar\src\Tribe\Aggregator\Settings.php:607
+Stack trace:
+#0 C:\wamp64\www\createtheadvantage\wp-content\plugins\the-events-calendar\src\Tribe\Aggregator\Page.php(107): Tribe__Events__Aggregator__Settings->get_source_origin_regexp()
+#1 C:\wamp64\www\createtheadvantage\wp-includes\class-wp-hook.php(288): Tribe__Events__Aggregator__Page->init('')
+#2 C:\wamp64\www\createtheadvantage\wp-includes\class-wp-hook.php(312): WP_Hook->apply_filters(NULL, Array)
+#3 C:\wamp64\www\createtheadvantage\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#4 C:\wamp64\www\createtheadvantage\wp-settings.php(523): do_action('init')
+#5 C:\wamp64\www\createtheadvantage\wp-config.php(90): require_once('C:\\wamp64\\www\\c...')
+#6 C:\wamp64\www\createtheadvantage\wp-load.php(37): require_once('C:\\wamp64\\www\\c...')
+#7 C:\wamp64\www\createtheadvantage\wp-admin\admin-ajax.php(22): require
+
+2020-01-01T20:48:04+00:00 CRITICAL Cannot redeclare portfolio_map_section() (previously declared in C:\wamp64\www\createtheadvantage\wp-content\plugins\theme-elements\theme-elements-old.php:905) in C:\wamp64\www\createtheadvantage\wp-content\plugins\theme-elements\theme-elements.php on line 896
+
+2020-01-01T20:48:13+00:00 CRITICAL Cannot redeclare portfolio_map_section() (previously declared in C:\wamp64\www\createtheadvantage\wp-content\plugins\theme-elements\theme-elements-old.php:905) in C:\wamp64\www\createtheadvantage\wp-content\plugins\theme-elements\theme-elements.php on line 896
+
+2020-01-01T20:48:13+00:00 CRITICAL Cannot redeclare portfolio_map_section() (previously declared in C:\wamp64\www\createtheadvantage\wp-content\plugins\theme-elements\theme-elements-old.php:905) in C:\wamp64\www\createtheadvantage\wp-content\plugins\theme-elements\theme-elements.php on line 896
+

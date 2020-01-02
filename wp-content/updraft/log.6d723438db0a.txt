@@ -1,0 +1,393 @@
+0000.017 () Opened log file at time: Wed, 01 Jan 2020 19:11:11 +0000 on http://createtheadvantage.local
+0000.018 () UpdraftPlus WordPress backup plugin (https://updraftplus.com): 2.14.2.22 WP: 5.3.2 PHP: 7.3.12 (apache2handler, Windows NT DESKTOP-AIR65HD 10.0 build 18362 (Windows 10) AMD64) MySQL: 5.5.5 WPLANG: en_CA Server: Apache/2.4.41 (Win64) PHP/7.3.12 safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 10.6M | 2M) multisite: N openssl: OpenSSL 1.1.1d  10 Sep 2019 mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.019 () Free space on disk containing Updraft's temporary directory: 1591821.2 MB
+0000.021 () Restore job started. Entities to restore: db. Restore options: {"updraft_restorer_replacesiteurl":"1","updraft_encryptionphrase":"","updraft_restorer_wpcore_includewpconfig":false}
+0000.042 () PHP event: code E_WARNING: Declaration of Updraft_Restorer_Skin::feedback($string) should be compatible with WP_Upgrader_Skin::feedback($string, ...$args) (line 2497, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\restorer.php)
+0000.072 () Entity: db
+0000.072 () restore_backup(backup_file=backup_2020-01-01-0043_CREATE_THE_ADVANTAGE_4832ade58e64-db.gz, type=db, info=a:0:{}, last_one=1)
+0000.074 () Unpacking backup... (backup_2020-01-01-0043_CREATE_THE_ADVANTAGE_4832ade58e64-db.gz, 0.8 Mb)
+0000.083 () Database successfully unpacked
+0000.086 () Restoring the database (on a large site this can take a long time - if it times out (which can happen if your web hosting company has configured your hosting to limit resources) then you should use a different method, such as phpMyAdmin)...
+0000.087 () Using direct MySQL access; value of use_mysqli is: 1
+0000.475 () Max packet size: 32 MB
+0000.475 () Entering maintenance mode
+0000.475 () Enabling Maintenance mode&#8230;
+0000.479 () Backup of: https://createtheadvantage.com
+0000.548 () Content URL: https://createtheadvantage.com/wp-content
+0000.549 () Uploads URL: https://createtheadvantage.com/wp-content/uploads
+0000.549 () Old table prefix: wp_
+0000.549 () Site information: multisite=0
+0000.551 () New table prefix: wp_
+0000.556 () Processing table (InnoDB): wp_options
+0003.211 () Restoring prior UD configuration (table: wp_options; keys: 90)
+0014.812 () Search and replacing table: wp_options: rows: 822
+0015.547 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_List&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0015.564 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_List&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0015.589 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_List&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0015.632 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_List&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0015.670 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_List&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0015.687 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_Merge_Field&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0015.698 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_Merge_Field&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0015.714 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_Merge_Field&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0015.727 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_Merge_Field&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0015.745 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_Merge_Field&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0015.757 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_Merge_Field&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0015.776 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_Merge_Field&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0015.790 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_Merge_Field&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0015.806 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_Merge_Field&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0015.819 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_Merge_Field&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0015.832 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_Merge_Field&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0015.847 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_Merge_Field&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0015.861 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_Merge_Field&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0015.881 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_Merge_Field&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0015.895 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_Merge_Field&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0015.912 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_Merge_Field&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0015.931 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_Merge_Field&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0015.947 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_Merge_Field&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0015.960 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_Merge_Field&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0015.976 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_Merge_Field&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0015.989 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_Merge_Field&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0016.010 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_Merge_Field&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0016.023 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_Merge_Field&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0016.040 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_Merge_Field&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0016.055 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_Merge_Field&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0016.072 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_Merge_Field&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0016.087 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_Merge_Field&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0016.104 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_Merge_Field&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0016.119 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_Merge_Field&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0016.135 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_Merge_Field&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0016.149 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_Merge_Field&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0016.165 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_Merge_Field&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0016.180 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_Merge_Field&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0016.192 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_Merge_Field&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0016.208 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_Merge_Field&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0016.224 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_Merge_Field&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0016.237 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_Merge_Field&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0016.248 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_Merge_Field&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0016.265 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_Merge_Field&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0016.288 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_Merge_Field&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0016.309 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_Merge_Field&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0016.321 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_Merge_Field&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0016.336 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_Merge_Field&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0016.347 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_Merge_Field&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0016.360 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_Merge_Field&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0016.375 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_Merge_Field&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0016.391 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_Merge_Field&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0016.412 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_Merge_Field&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0016.426 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_List&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0016.439 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_List&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0016.453 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_List&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0016.473 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_List&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0016.483 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_List&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0016.505 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_List&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0016.522 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_List&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0016.538 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_List&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0016.555 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_Merge_Field&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0016.572 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_Merge_Field&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0016.589 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_Merge_Field&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0016.610 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_Merge_Field&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0016.627 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_Merge_Field&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0016.642 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_Merge_Field&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0016.683 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_Merge_Field&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0016.706 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_Merge_Field&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0016.721 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_Merge_Field&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0016.739 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_Merge_Field&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0016.751 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_Merge_Field&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0016.763 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_Merge_Field&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0016.779 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_Merge_Field&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0016.798 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_Merge_Field&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0016.811 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_Merge_Field&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0016.823 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_Merge_Field&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0016.839 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_Merge_Field&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0016.856 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_Merge_Field&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0016.872 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_Merge_Field&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0016.889 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_Merge_Field&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0016.906 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_Merge_Field&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0016.920 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_Merge_Field&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0016.937 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_Merge_Field&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0016.948 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_Merge_Field&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0016.965 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_Merge_Field&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0016.981 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_Merge_Field&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0016.995 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_Merge_Field&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0017.009 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_Merge_Field&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0017.029 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_Merge_Field&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0017.046 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_Merge_Field&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0017.066 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_Merge_Field&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0017.088 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_Merge_Field&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0017.104 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_Merge_Field&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0017.118 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_Merge_Field&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0017.129 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_Merge_Field&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0017.146 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_Merge_Field&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0017.159 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_Merge_Field&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0017.175 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_Merge_Field&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0017.192 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_Merge_Field&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0017.207 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_Merge_Field&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0017.226 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_List&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0017.243 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_List&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0017.255 () PHP event: code E_NOTICE: UpdraftPlus_Addons_Migrator::_migrator_recursive_unserialize_replace(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;MC4WP_MailChimp_List&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition (line 1563, C:\wamp64\www\createtheadvantage\wp-content\plugins\updraftplus\addons\migrator.php)
+0017.783 () Processing table (InnoDB): wp_users
+0018.298 () Search and replacing table: wp_users: rows: 4
+0018.374 () Processing table (InnoDB): wp_usermeta
+0018.764 () Search and replacing table: wp_usermeta: rows: 147
+0018.851 () Processing table (InnoDB): wp_commentmeta
+0019.283 () Search and replacing table: wp_commentmeta: rows: 0
+0019.283 () Processing table (InnoDB): wp_comments
+0019.726 () Search and replacing table: wp_comments: rows: 0
+0019.726 () Processing table (InnoDB): wp_links
+0020.644 () Search and replacing table: wp_links: rows: 0
+0020.644 () Processing table (InnoDB): wp_postmeta
+0023.454 () Search and replacing table: wp_postmeta: rows: 17
+0023.817 () Processing table (InnoDB): wp_posts
+0028.032 () Database queries processed: 50 in 27.91 seconds
+0028.041 () Skipping search/replace on GUID column in posts table
+0028.042 () Search and replacing table: wp_posts: rows: 1081
+0031.322 () Processing table (InnoDB): wp_term_relationships
+0032.088 () Skipping this table: data in this table (wp_term_relationships) should not be search/replaced
+0032.088 () Processing table (InnoDB): wp_term_taxonomy
+0032.704 () Search and replacing table: wp_term_taxonomy: rows: 198
+0032.730 () Processing table (InnoDB): wp_termmeta
+0033.180 () Search and replacing table: wp_termmeta: rows: 0
+0033.180 () Processing table (InnoDB): wp_terms
+0033.795 () Search and replacing table: wp_terms: rows: 198
+0033.822 () Processing table (InnoDB): wp_woocommerce_order_itemmeta
+0034.172 () Search and replacing table: wp_woocommerce_order_itemmeta: rows: 0
+0034.172 () Processing table (InnoDB): wp_woocommerce_payment_tokenmeta
+0034.600 () Search and replacing table: wp_woocommerce_payment_tokenmeta: rows: 0
+0034.600 () Processing table (MyISAM): wp_yoast_seo_links
+0034.669 () Search and replacing table: wp_yoast_seo_links: rows: 15
+0034.678 () Processing table (MyISAM): wp_yoast_seo_meta
+0034.775 () Search and replacing table: wp_yoast_seo_meta: rows: 160
+0034.793 () Processing table (InnoDB): wp_amelia_appointments
+0035.126 () Search and replacing table: wp_amelia_appointments: rows: 0
+0035.126 () Processing table (InnoDB): wp_amelia_categories
+0035.706 () Search and replacing table: wp_amelia_categories: rows: 4
+0035.707 () Processing table (InnoDB): wp_amelia_coupons
+0036.017 () Search and replacing table: wp_amelia_coupons: rows: 0
+0036.017 () Processing table (InnoDB): wp_amelia_coupons_to_services
+0036.385 () Search and replacing table: wp_amelia_coupons_to_services: rows: 0
+0036.386 () Processing table (InnoDB): wp_amelia_customer_bookings
+0036.845 () Search and replacing table: wp_amelia_customer_bookings: rows: 0
+0036.845 () Processing table (InnoDB): wp_amelia_customer_bookings_to_extras
+0037.152 () Search and replacing table: wp_amelia_customer_bookings_to_extras: rows: 0
+0037.152 () Processing table (InnoDB): wp_amelia_discounts
+0037.888 () Search and replacing table: wp_amelia_discounts: rows: 0
+0037.889 () Processing table (InnoDB): wp_amelia_extras
+0038.470 () Search and replacing table: wp_amelia_extras: rows: 0
+0038.470 () Processing table (InnoDB): wp_amelia_galleries
+0038.860 () Search and replacing table: wp_amelia_galleries: rows: 0
+0038.860 () Processing table (InnoDB): wp_amelia_locations
+0039.161 () Search and replacing table: wp_amelia_locations: rows: 0
+0039.161 () Processing table (InnoDB): wp_amelia_locations_views
+0039.571 () Search and replacing table: wp_amelia_locations_views: rows: 0
+0039.571 () Processing table (InnoDB): wp_amelia_notifications
+0040.144 () Search and replacing table: wp_amelia_notifications: rows: 14
+0040.153 () Processing table (InnoDB): wp_amelia_notifications_log
+0040.627 () Search and replacing table: wp_amelia_notifications_log: rows: 0
+0040.627 () Processing table (InnoDB): wp_amelia_payments
+0040.987 () Database queries processed: 100 in 40.86 seconds
+0041.012 () Search and replacing table: wp_amelia_payments: rows: 0
+0041.013 () Processing table (InnoDB): wp_amelia_providers_to_daysoff
+0041.397 () Search and replacing table: wp_amelia_providers_to_daysoff: rows: 0
+0041.397 () Processing table (InnoDB): wp_amelia_providers_to_google_calendar
+0041.780 () Search and replacing table: wp_amelia_providers_to_google_calendar: rows: 0
+0041.780 () Processing table (InnoDB): wp_amelia_providers_to_locations
+0042.245 () Search and replacing table: wp_amelia_providers_to_locations: rows: 0
+0042.246 () Processing table (InnoDB): wp_amelia_providers_to_services
+0042.873 () Search and replacing table: wp_amelia_providers_to_services: rows: 4
+0042.874 () Processing table (InnoDB): wp_amelia_providers_to_timeouts
+0043.685 () Search and replacing table: wp_amelia_providers_to_timeouts: rows: 0
+0043.685 () Processing table (InnoDB): wp_amelia_providers_to_weekdays
+0044.390 () Search and replacing table: wp_amelia_providers_to_weekdays: rows: 5
+0044.394 () Processing table (InnoDB): wp_amelia_providers_views
+0045.141 () Search and replacing table: wp_amelia_providers_views: rows: 16
+0045.144 () Processing table (InnoDB): wp_amelia_services
+0045.846 () Search and replacing table: wp_amelia_services: rows: 4
+0046.186 () Processing table (InnoDB): wp_amelia_services_views
+0046.925 () Search and replacing table: wp_amelia_services_views: rows: 13
+0046.928 () Processing table (InnoDB): wp_amelia_users
+0047.424 () Search and replacing table: wp_amelia_users: rows: 5
+0047.428 () Processing table (InnoDB): wp_learnpress_order_itemmeta
+0047.824 () Search and replacing table: wp_learnpress_order_itemmeta: rows: 0
+0047.824 () Processing table (InnoDB): wp_learnpress_order_items
+0048.159 () Search and replacing table: wp_learnpress_order_items: rows: 0
+0048.159 () Processing table (InnoDB): wp_learnpress_question_answermeta
+0049.173 () Search and replacing table: wp_learnpress_question_answermeta: rows: 8
+0049.175 () Processing table (InnoDB): wp_learnpress_question_answers
+0049.742 () Search and replacing table: wp_learnpress_question_answers: rows: 10
+0049.748 () Processing table (InnoDB): wp_learnpress_quiz_questions
+0050.145 () Search and replacing table: wp_learnpress_quiz_questions: rows: 4
+0050.147 () Processing table (InnoDB): wp_learnpress_review_logs
+0050.754 () Search and replacing table: wp_learnpress_review_logs: rows: 5
+0050.758 () Processing table (InnoDB): wp_learnpress_section_items
+0051.149 () Search and replacing table: wp_learnpress_section_items: rows: 6
+0051.152 () Processing table (InnoDB): wp_learnpress_sections
+0051.779 () Search and replacing table: wp_learnpress_sections: rows: 3
+0051.781 () Processing table (InnoDB): wp_learnpress_sessions
+0052.168 () Database queries processed: 150 in 52.04 seconds
+0052.307 () Search and replacing table: wp_learnpress_sessions: rows: 187
+0052.330 () Processing table (InnoDB): wp_learnpress_user_itemmeta
+0052.903 () Search and replacing table: wp_learnpress_user_itemmeta: rows: 10
+0052.905 () Processing table (InnoDB): wp_learnpress_user_items
+0053.590 () Search and replacing table: wp_learnpress_user_items: rows: 4
+0053.592 () Processing table (InnoDB): wp_nf3_action_meta
+0054.206 () Search and replacing table: wp_nf3_action_meta: rows: 126
+0054.225 () Processing table (InnoDB): wp_nf3_actions
+0055.151 () Search and replacing table: wp_nf3_actions: rows: 6
+0055.152 () Processing table (InnoDB): wp_nf3_field_meta
+0055.882 () Search and replacing table: wp_nf3_field_meta: rows: 133
+0055.915 () Processing table (InnoDB): wp_nf3_fields
+0056.359 () Search and replacing table: wp_nf3_fields: rows: 10
+0056.364 () Processing table (InnoDB): wp_nf3_form_meta
+0056.970 () Search and replacing table: wp_nf3_form_meta: rows: 36
+0056.986 () Processing table (InnoDB): wp_nf3_forms
+0057.796 () Search and replacing table: wp_nf3_forms: rows: 2
+0057.797 () Processing table (InnoDB): wp_nf3_object_meta
+0058.210 () Search and replacing table: wp_nf3_object_meta: rows: 0
+0058.211 () Processing table (InnoDB): wp_nf3_objects
+0058.562 () Search and replacing table: wp_nf3_objects: rows: 0
+0058.562 () Processing table (InnoDB): wp_nf3_relationships
+0059.010 () Search and replacing table: wp_nf3_relationships: rows: 0
+0059.010 () Processing table (InnoDB): wp_pantheon_sessions
+0059.439 () Search and replacing table: wp_pantheon_sessions: rows: 1
+0059.441 () Processing table (InnoDB): wp_revslider_css
+0060.549 () Search and replacing table: wp_revslider_css: rows: 109
+0060.638 () Processing table (InnoDB): wp_revslider_layer_animations
+0060.998 () Search and replacing table: wp_revslider_layer_animations: rows: 0
+0060.999 () Processing table (InnoDB): wp_revslider_navigations
+0061.280 () Search and replacing table: wp_revslider_navigations: rows: 0
+0061.280 () Processing table (InnoDB): wp_revslider_sliders
+0061.917 () Search and replacing table: wp_revslider_sliders: rows: 6
+0061.969 () Processing table (InnoDB): wp_revslider_slides
+0062.916 () Search and replacing table: wp_revslider_slides: rows: 16
+0064.418 () Processing table (InnoDB): wp_revslider_static_slides
+0064.756 () Database queries processed: 200 in 64.63 seconds
+0064.786 () Search and replacing table: wp_revslider_static_slides: rows: 0
+0064.786 () Processing table (MyISAM): wp_smush_dir_images
+0064.872 () Search and replacing table: wp_smush_dir_images: rows: 0
+0064.872 () Processing table (InnoDB): wp_wc_download_log
+0065.322 () Search and replacing table: wp_wc_download_log: rows: 0
+0065.322 () Processing table (InnoDB): wp_wc_webhooks
+0066.026 () Search and replacing table: wp_wc_webhooks: rows: 0
+0066.026 () Processing table (InnoDB): wp_wdi_feeds
+0066.512 () Search and replacing table: wp_wdi_feeds: rows: 3
+0066.516 () Processing table (InnoDB): wp_wdi_themes
+0067.091 () Search and replacing table: wp_wdi_themes: rows: 2
+0067.099 () Processing table (InnoDB): wp_woocommerce_api_keys
+0067.670 () Search and replacing table: wp_woocommerce_api_keys: rows: 0
+0067.670 () Processing table (InnoDB): wp_woocommerce_attribute_taxonomies
+0068.068 () Search and replacing table: wp_woocommerce_attribute_taxonomies: rows: 0
+0068.069 () Processing table (InnoDB): wp_woocommerce_downloadable_product_permissions
+0068.674 () Search and replacing table: wp_woocommerce_downloadable_product_permissions: rows: 0
+0068.674 () Processing table (InnoDB): wp_woocommerce_log
+0068.963 () Search and replacing table: wp_woocommerce_log: rows: 0
+0068.964 () Processing table (InnoDB): wp_woocommerce_order_items
+0069.335 () Skipping this table: data in this table (wp_woocommerce_order_items) should not be search/replaced
+0069.335 () Processing table (InnoDB): wp_woocommerce_payment_tokens
+0069.695 () Search and replacing table: wp_woocommerce_payment_tokens: rows: 0
+0069.696 () Processing table (InnoDB): wp_woocommerce_sessions
+0070.086 () Skipping this table: data in this table (wp_woocommerce_sessions) should not be search/replaced
+0070.086 () Processing table (InnoDB): wp_woocommerce_shipping_zone_locations
+0070.480 () Search and replacing table: wp_woocommerce_shipping_zone_locations: rows: 0
+0070.480 () Processing table (InnoDB): wp_woocommerce_shipping_zone_methods
+0071.273 () Search and replacing table: wp_woocommerce_shipping_zone_methods: rows: 0
+0071.273 () Processing table (InnoDB): wp_woocommerce_shipping_zones
+0071.612 () Search and replacing table: wp_woocommerce_shipping_zones: rows: 0
+0071.612 () Processing table (InnoDB): wp_woocommerce_tax_rate_locations
+0072.022 () Search and replacing table: wp_woocommerce_tax_rate_locations: rows: 0
+0072.022 () Processing table (InnoDB): wp_woocommerce_tax_rates
+0072.558 () Unlocking database and leaving maintenance mode
+0072.558 () Disabling Maintenance mode&#8230;
+0072.575 () Search and replacing table: wp_woocommerce_tax_rates: rows: 0
+0072.575 () Finished: lines processed: 239 in 72.45 seconds
+0072.577 () Cleaning up rubbish...
+0072.579 () Begin search and replace (updraftplus_restored_db)
+0072.579 () [Database-replace-site-url] Database: search and replace site URL
+0072.581 () Restored pre-migration site ID for this installation
+0072.694 () Database search and replace: replace https://createtheadvantage.com in backup dump with http://createtheadvantage.local
+0072.694 () Database search and replace: replace http://createtheadvantage.com in backup dump with http://createtheadvantage.local
+0072.699 () Search and replacing table: wp_amelia_appointments: already done
+0072.700 () Search and replacing table: wp_amelia_categories: already done
+0072.700 () Search and replacing table: wp_amelia_coupons: already done
+0072.700 () Search and replacing table: wp_amelia_coupons_to_services: already done
+0072.700 () Search and replacing table: wp_amelia_customer_bookings: already done
+0072.700 () Search and replacing table: wp_amelia_customer_bookings_to_extras: already done
+0072.700 () Search and replacing table: wp_amelia_discounts: already done
+0072.700 () Search and replacing table: wp_amelia_extras: already done
+0072.701 () Search and replacing table: wp_amelia_galleries: already done
+0072.701 () Search and replacing table: wp_amelia_locations: already done
+0072.701 () Search and replacing table: wp_amelia_locations_views: already done
+0072.701 () Search and replacing table: wp_amelia_notifications: already done
+0072.701 () Search and replacing table: wp_amelia_notifications_log: already done
+0072.701 () Search and replacing table: wp_amelia_payments: already done
+0072.701 () Search and replacing table: wp_amelia_providers_to_daysoff: already done
+0072.701 () Search and replacing table: wp_amelia_providers_to_google_calendar: already done
+0072.702 () Search and replacing table: wp_amelia_providers_to_locations: already done
+0072.702 () Search and replacing table: wp_amelia_providers_to_services: already done
+0072.702 () Search and replacing table: wp_amelia_providers_to_timeouts: already done
+0072.702 () Search and replacing table: wp_amelia_providers_to_weekdays: already done
+0072.702 () Search and replacing table: wp_amelia_providers_views: already done
+0072.702 () Search and replacing table: wp_amelia_services: already done
+0072.703 () Search and replacing table: wp_amelia_services_views: already done
+0072.703 () Search and replacing table: wp_amelia_users: already done
+0072.703 () Search and replacing table: wp_commentmeta: already done
+0072.703 () Search and replacing table: wp_comments: already done
+0072.703 () Search and replacing table: wp_learnpress_order_itemmeta: already done
+0072.703 () Search and replacing table: wp_learnpress_order_items: already done
+0072.703 () Search and replacing table: wp_learnpress_question_answermeta: already done
+0072.704 () Search and replacing table: wp_learnpress_question_answers: already done
+0072.704 () Search and replacing table: wp_learnpress_quiz_questions: already done
+0072.704 () Search and replacing table: wp_learnpress_review_logs: already done
+0072.704 () Search and replacing table: wp_learnpress_section_items: already done
+0072.704 () Search and replacing table: wp_learnpress_sections: already done
+0072.704 () Search and replacing table: wp_learnpress_sessions: already done
+0072.704 () Search and replacing table: wp_learnpress_user_itemmeta: already done
+0072.705 () Search and replacing table: wp_learnpress_user_items: already done
+0072.705 () Search and replacing table: wp_links: already done
+0072.705 () Search and replacing table: wp_nf3_action_meta: already done
+0072.705 () Search and replacing table: wp_nf3_actions: already done
+0072.705 () Search and replacing table: wp_nf3_field_meta: already done
+0072.706 () Search and replacing table: wp_nf3_fields: already done
+0072.706 () Search and replacing table: wp_nf3_form_meta: already done
+0072.707 () Search and replacing table: wp_nf3_forms: already done
+0072.707 () Search and replacing table: wp_nf3_object_meta: already done
+0072.707 () Search and replacing table: wp_nf3_objects: already done
+0072.707 () Search and replacing table: wp_nf3_relationships: already done
+0072.708 () Search and replacing table: wp_options: already done
+0072.708 () Search and replacing table: wp_pantheon_sessions: already done
+0072.708 () Search and replacing table: wp_postmeta: already done
+0072.708 () Search and replacing table: wp_posts: already done
+0072.709 () Search and replacing table: wp_revslider_css: already done
+0072.709 () Search and replacing table: wp_revslider_layer_animations: already done
+0072.709 () Search and replacing table: wp_revslider_navigations: already done
+0072.709 () Search and replacing table: wp_revslider_sliders: already done
+0072.709 () Search and replacing table: wp_revslider_slides: already done
+0072.710 () Search and replacing table: wp_revslider_static_slides: already done
+0072.710 () Search and replacing table: wp_smush_dir_images: already done
+0072.710 () Search and replacing table: wp_term_relationships: already done
+0072.710 () Search and replacing table: wp_term_taxonomy: already done
+0072.710 () Search and replacing table: wp_termmeta: already done
+0072.711 () Search and replacing table: wp_terms: already done
+0072.711 () Search and replacing table: wp_usermeta: already done
+0072.711 () Search and replacing table: wp_users: already done
+0072.711 () Search and replacing table: wp_wc_download_log: already done
+0072.712 () Search and replacing table: wp_wc_webhooks: already done
+0072.712 () Search and replacing table: wp_wdi_feeds: already done
+0072.712 () Search and replacing table: wp_wdi_themes: already done
+0072.712 () Search and replacing table: wp_woocommerce_api_keys: already done
+0072.713 () Search and replacing table: wp_woocommerce_attribute_taxonomies: already done
+0072.713 () Search and replacing table: wp_woocommerce_downloadable_product_permissions: already done
+0072.713 () Search and replacing table: wp_woocommerce_log: already done
+0072.713 () Search and replacing table: wp_woocommerce_order_itemmeta: already done
+0072.713 () Search and replacing table: wp_woocommerce_order_items: already done
+0072.713 () Search and replacing table: wp_woocommerce_payment_tokenmeta: already done
+0072.713 () Search and replacing table: wp_woocommerce_payment_tokens: already done
+0072.714 () Search and replacing table: wp_woocommerce_sessions: already done
+0072.714 () Search and replacing table: wp_woocommerce_shipping_zone_locations: already done
+0072.714 () Search and replacing table: wp_woocommerce_shipping_zone_methods: already done
+0072.714 () Search and replacing table: wp_woocommerce_shipping_zones: already done
+0072.714 () Search and replacing table: wp_woocommerce_tax_rate_locations: already done
+0072.714 () Search and replacing table: wp_woocommerce_tax_rates: already done
+0072.714 () Search and replacing table: wp_yoast_seo_links: already done
+0072.715 () Search and replacing table: wp_yoast_seo_meta: already done
+0073.075 () Restore successful!
+0073.075 () Restore successful

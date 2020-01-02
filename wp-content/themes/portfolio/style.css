@@ -1,0 +1,43 @@
+/*
+Theme Name: Portfolio 
+Theme URI: https://helloacademy.com/wp
+Author: Helloexpart
+Author URI: https://helloxpart.com/wp
+Text Domain: portfolio 
+Description:  portfolio is modern and beautiful layout for all devices big or small. It has custom color options and default color schemes, a harmonious fluid grid using a mobile-first approach, it features multiple sections on the front page as well as widgets, navigation and social menus, a logo, and more.portfolio will make your WordPress look beautiful everywhere.
+Version: 1.0
+Tags: one-column, two-columns, right-sidebar, accessibility-ready, custom-background, custom-colors, blog
+License: Hello Academy
+License URI: http://www.helloacademy.com
+*/
+.wp-caption{
+	background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+.wp-caption-text{
+	font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
+.sticky{background: #f6f6f6;}
+.screen-reader-text {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute !important;
+	width: 1px;
+	word-wrap: normal !important; /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+}
+.gallery-caption{display: block;text-align: left;padding: 0 10px 0 0;margin-bottom: 0;}
+.bypostauthor{display: normal;}
+.alignright{float:right; margin-left:6px 0 14px 14px;}
+.alignleft {float:left; margin-right:6px 14px 14px 0;}
+.aligncenter{display: block; margin: 5px auto 5px auto;}

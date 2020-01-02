@@ -1,0 +1,389 @@
+0000.003 (0) Opened log file at time: Thu, 02 Jan 2020 06:55:38 +0000 on http://createtheadvantage.local
+0000.075 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 2.14.2.22 WP: 5.3.2 PHP: 7.3.12 (apache2handler, Windows NT DESKTOP-AIR65HD 10.0 build 18362 (Windows 10) AMD64) MySQL: 5.5.5 WPLANG: en_US Server: Apache/2.4.41 (Win64) PHP/7.3.12 safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 14.4M | 2M) multisite: N openssl: OpenSSL 1.1.1d  10 Sep 2019 mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.111 (0) Free space on disk containing Updraft's temporary directory: 1578882.7 MB
+0000.176 (0) Tasks: Backup files: 1 (schedule: daily) Backup DB:  (schedule: daily)
+0000.219 (0) Processed schedules. Combining jobs from identical schedules. Tasks now: Backup files: 1 Backup DB: 1
+0000.319 (0) Requesting semaphore lock (fd) (apparently via scheduler: last_scheduled_action_called_at=1577839430, seconds_ago=108708)
+0000.437 (0) Semaphore (fd, wp_options) was stuck, set lock time to 2020-01-02 06:55:39
+0000.477 (0) Semaphore (fd, wp_options) reset to 1
+0000.512 (0) Set semaphore last lock (fd) time to 2020-01-02 06:55:39
+0000.548 (0) Semaphore lock (fd) complete
+0000.669 (0) Backup run: resumption=0, nonce=90ba20335efb, begun at=1577948138 (1s ago), job type=backup
+0000.751 (0) Scheduling a resumption (1) after 300 seconds (1577948439) in case this run gets aborted
+0000.922 (0) Checking if we have a zip executable available
+0001.008 (0) Creation of backups of directories: beginning
+0001.176 (0) No backup of plugins: excluded by user's options
+0001.219 (0) No backup of themes: excluded by user's options
+0001.256 (0) No backup of uploads: excluded by user's options
+0001.285 (0) No backup of wpcore: excluded by user's options
+0001.321 (0) No backup of others: excluded by user's options
+0001.367 (0) No backup of more: excluded by user's options
+0001.552 (0) Saving backup status to database (elements: 0)
+0001.635 (0) Beginning creation of database dump (WordPress DB)
+0001.967 (0) Table wp_options: Total expected rows (approximate): 786
+0002.152 (0) Table wp_options: Total rows added: 791 in 0.14 seconds
+0002.206 (0) Table wp_options: finishing file (backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_options.table.gz - 315.2 KB)
+0002.371 (0) Table wp_users: Total expected rows (approximate): 4
+0002.429 (0) Table wp_users: Total rows added: 4 in 0.02 seconds
+0002.485 (0) Table wp_users: finishing file (backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_users.table.gz - 0.9 KB)
+0002.675 (0) Table wp_usermeta: Total expected rows (approximate): 151
+0002.753 (0) Table wp_usermeta: Total rows added: 151 in 0.04 seconds
+0002.806 (0) Table wp_usermeta: finishing file (backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_usermeta.table.gz - 3.3 KB)
+0002.927 (0) Table wp_commentmeta: Total expected rows (approximate): 0
+0002.981 (0) Table wp_commentmeta: Total rows added: 0 in 0.02 seconds
+0003.022 (0) Table wp_commentmeta: finishing file (backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_commentmeta.table.gz - 0.4 KB)
+0003.163 (0) Table wp_comments: Total expected rows (approximate): 0
+0003.219 (0) Table wp_comments: Total rows added: 0 in 0.02 seconds
+0003.258 (0) Table wp_comments: finishing file (backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_comments.table.gz - 0.5 KB)
+0003.390 (0) Table wp_links: Total expected rows (approximate): 0
+0003.445 (0) Table wp_links: Total rows added: 0 in 0.02 seconds
+0003.486 (0) Table wp_links: finishing file (backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_links.table.gz - 0.4 KB)
+0003.606 (0) Table wp_postmeta: Total expected rows (approximate): 2610
+0003.780 (0) Table wp_postmeta: Total rows added: 2574 in 0.11 seconds
+0003.824 (0) Table wp_postmeta: finishing file (backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_postmeta.table.gz - 81.1 KB)
+0003.939 (0) Table wp_posts: Total expected rows (approximate): 1161
+0004.404 (0) Table wp_posts: Total rows added: 1082 in 0.43 seconds
+0005.174 (0) Table wp_posts: finishing file (backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_posts.table.gz - 306.5 KB)
+0005.739 (0) Table wp_term_relationships: Total expected rows (approximate): 117
+0005.835 (0) Table wp_term_relationships: Total rows added: 117 in 0.04 seconds
+0005.900 (0) Table wp_term_relationships: finishing file (backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_term_relationships.table.gz - 0.7 KB)
+0006.106 (0) Table wp_term_taxonomy: Total expected rows (approximate): 198
+0006.171 (0) Table wp_term_taxonomy: Total rows added: 198 in 0.03 seconds
+0006.219 (0) Table wp_term_taxonomy: finishing file (backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_term_taxonomy.table.gz - 1.8 KB)
+0006.350 (0) Table wp_termmeta: Total expected rows (approximate): 0
+0006.406 (0) Table wp_termmeta: Total rows added: 0 in 0.02 seconds
+0006.445 (0) Table wp_termmeta: finishing file (backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_termmeta.table.gz - 0.4 KB)
+0006.556 (0) Table wp_terms: Total expected rows (approximate): 198
+0006.605 (0) Table wp_terms: Total rows added: 198 in 0.02 seconds
+0006.646 (0) Table wp_terms: finishing file (backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_terms.table.gz - 2.6 KB)
+0006.841 (0) Table wp_wc_product_meta_lookup: Total expected rows (approximate): 0
+0006.900 (0) Table wp_wc_product_meta_lookup: Total rows added: 0 in 0.01 seconds
+0006.934 (0) Table wp_wc_product_meta_lookup: finishing file (backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_wc_product_meta_lookup.table.gz - 0.5 KB)
+0007.050 (0) Table wp_wc_tax_rate_classes: Total expected rows (approximate): 2
+0007.108 (0) Table wp_wc_tax_rate_classes: Total rows added: 2 in 0.02 seconds
+0007.154 (0) Table wp_wc_tax_rate_classes: finishing file (backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_wc_tax_rate_classes.table.gz - 0.4 KB)
+0007.276 (0) Table wp_woocommerce_order_itemmeta: Total expected rows (approximate): 0
+0007.330 (0) Table wp_woocommerce_order_itemmeta: Total rows added: 0 in 0.01 seconds
+0007.379 (0) Table wp_woocommerce_order_itemmeta: finishing file (backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_woocommerce_order_itemmeta.table.gz - 0.4 KB)
+0007.500 (0) Table wp_woocommerce_payment_tokenmeta: Total expected rows (approximate): 0
+0007.542 (0) Table wp_woocommerce_payment_tokenmeta: Total rows added: 0 in 0.01 seconds
+0007.606 (0) Table wp_woocommerce_payment_tokenmeta: finishing file (backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_woocommerce_payment_tokenmeta.table.gz - 0.4 KB)
+0007.751 (0) Table wp_yoast_seo_links: Total expected rows (approximate): 15
+0007.807 (0) Table wp_yoast_seo_links: Total rows added: 15 in 0.02 seconds
+0007.860 (0) Table wp_yoast_seo_links: finishing file (backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_yoast_seo_links.table.gz - 0.7 KB)
+0008.037 (0) Table wp_yoast_seo_meta: Total expected rows (approximate): 161
+0008.119 (0) Table wp_yoast_seo_meta: Total rows added: 161 in 0.02 seconds
+0008.175 (0) Table wp_yoast_seo_meta: finishing file (backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_yoast_seo_meta.table.gz - 0.8 KB)
+0008.290 (0) Table wp_amelia_appointments: Total expected rows (approximate): 0
+0008.340 (0) Table wp_amelia_appointments: Total rows added: 0 in 0.01 seconds
+0008.410 (0) Table wp_amelia_appointments: finishing file (backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_amelia_appointments.table.gz - 0.5 KB)
+0008.555 (0) Table wp_amelia_categories: Total expected rows (approximate): 4
+0008.604 (0) Table wp_amelia_categories: Total rows added: 4 in 0.02 seconds
+0008.703 (0) Table wp_amelia_categories: finishing file (backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_amelia_categories.table.gz - 0.5 KB)
+0008.951 (0) Table wp_amelia_coupons: Total expected rows (approximate): 0
+0009.066 (0) Table wp_amelia_coupons: Total rows added: 0 in 0.02 seconds
+0009.109 (0) Table wp_amelia_coupons: finishing file (backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_amelia_coupons.table.gz - 0.3 KB)
+0009.313 (0) Table wp_amelia_coupons_to_services: Total expected rows (approximate): 0
+0009.390 (0) Table wp_amelia_coupons_to_services: Total rows added: 0 in 0.01 seconds
+0009.444 (0) Table wp_amelia_coupons_to_services: finishing file (backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_amelia_coupons_to_services.table.gz - 0.4 KB)
+0009.641 (0) Table wp_amelia_customer_bookings: Total expected rows (approximate): 0
+0009.682 (0) Table wp_amelia_customer_bookings: Total rows added: 0 in 0.01 seconds
+0009.728 (0) Table wp_amelia_customer_bookings: finishing file (backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_amelia_customer_bookings.table.gz - 0.5 KB)
+0009.844 (0) Table wp_amelia_customer_bookings_to_extras: Total expected rows (approximate): 0
+0009.938 (0) Table wp_amelia_customer_bookings_to_extras: Total rows added: 0 in 0.05 seconds
+0010.247 (0) Table wp_amelia_customer_bookings_to_extras: finishing file (backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_amelia_customer_bookings_to_extras.table.gz - 0.4 KB)
+0010.468 (0) Table wp_amelia_discounts: Total expected rows (approximate): 0
+0010.542 (0) Table wp_amelia_discounts: Total rows added: 0 in 0.01 seconds
+0010.581 (0) Table wp_amelia_discounts: finishing file (backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_amelia_discounts.table.gz - 0.3 KB)
+0010.734 (0) Table wp_amelia_extras: Total expected rows (approximate): 0
+0010.796 (0) Table wp_amelia_extras: Total rows added: 0 in 0.01 seconds
+0010.833 (0) Table wp_amelia_extras: finishing file (backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_amelia_extras.table.gz - 0.4 KB)
+0010.974 (0) Table wp_amelia_galleries: Total expected rows (approximate): 0
+0011.053 (0) Table wp_amelia_galleries: Total rows added: 0 in 0.04 seconds
+0011.094 (0) Table wp_amelia_galleries: finishing file (backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_amelia_galleries.table.gz - 0.3 KB)
+0011.252 (0) Table wp_amelia_locations: Total expected rows (approximate): 0
+0011.319 (0) Table wp_amelia_locations: Total rows added: 0 in 0.01 seconds
+0011.357 (0) Table wp_amelia_locations: finishing file (backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_amelia_locations.table.gz - 0.4 KB)
+0011.512 (0) Table wp_amelia_locations_views: Total expected rows (approximate): 0
+0011.571 (0) Table wp_amelia_locations_views: Total rows added: 0 in 0.02 seconds
+0011.634 (0) Table wp_amelia_locations_views: finishing file (backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_amelia_locations_views.table.gz - 0.4 KB)
+0011.776 (0) Table wp_amelia_notifications: Total expected rows (approximate): 14
+0011.844 (0) Table wp_amelia_notifications: Total rows added: 14 in 0.02 seconds
+0011.911 (0) Table wp_amelia_notifications: finishing file (backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_amelia_notifications.table.gz - 1.3 KB)
+0012.055 (0) Table wp_amelia_notifications_log: Total expected rows (approximate): 0
+0012.111 (0) Table wp_amelia_notifications_log: Total rows added: 0 in 0.01 seconds
+0012.162 (0) Table wp_amelia_notifications_log: finishing file (backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_amelia_notifications_log.table.gz - 0.4 KB)
+0012.347 (0) Table wp_amelia_payments: Total expected rows (approximate): 0
+0012.406 (0) Table wp_amelia_payments: Total rows added: 0 in 0.01 seconds
+0012.450 (0) Table wp_amelia_payments: finishing file (backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_amelia_payments.table.gz - 0.5 KB)
+0012.617 (0) Table wp_amelia_providers_to_daysoff: Total expected rows (approximate): 0
+0012.676 (0) Table wp_amelia_providers_to_daysoff: Total rows added: 0 in 0.02 seconds
+0012.727 (0) Table wp_amelia_providers_to_daysoff: finishing file (backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_amelia_providers_to_daysoff.table.gz - 0.4 KB)
+0012.868 (0) Table wp_amelia_providers_to_google_calendar: Total expected rows (approximate): 0
+0012.951 (0) Table wp_amelia_providers_to_google_calendar: Total rows added: 0 in 0.03 seconds
+0013.004 (0) Table wp_amelia_providers_to_google_calendar: finishing file (backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_amelia_providers_to_google_calendar.table.gz - 0.3 KB)
+0013.137 (0) Table wp_amelia_providers_to_locations: Total expected rows (approximate): 0
+0013.208 (0) Table wp_amelia_providers_to_locations: Total rows added: 0 in 0.01 seconds
+0013.256 (0) Table wp_amelia_providers_to_locations: finishing file (backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_amelia_providers_to_locations.table.gz - 0.4 KB)
+0013.475 (0) Table wp_amelia_providers_to_services: Total expected rows (approximate): 4
+0013.584 (0) Table wp_amelia_providers_to_services: Total rows added: 4 in 0.06 seconds
+0013.635 (0) Table wp_amelia_providers_to_services: finishing file (backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_amelia_providers_to_services.table.gz - 0.5 KB)
+0013.856 (0) Table wp_amelia_providers_to_timeouts: Total expected rows (approximate): 0
+0013.908 (0) Table wp_amelia_providers_to_timeouts: Total rows added: 0 in 0.01 seconds
+0013.961 (0) Table wp_amelia_providers_to_timeouts: finishing file (backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_amelia_providers_to_timeouts.table.gz - 0.4 KB)
+0014.100 (0) Table wp_amelia_providers_to_weekdays: Total expected rows (approximate): 5
+0014.200 (0) Table wp_amelia_providers_to_weekdays: Total rows added: 5 in 0.03 seconds
+0014.259 (0) Table wp_amelia_providers_to_weekdays: finishing file (backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_amelia_providers_to_weekdays.table.gz - 0.5 KB)
+0014.426 (0) Table wp_amelia_providers_views: Total expected rows (approximate): 16
+0014.522 (0) Table wp_amelia_providers_views: Total rows added: 16 in 0.01 seconds
+0014.565 (0) Table wp_amelia_providers_views: finishing file (backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_amelia_providers_views.table.gz - 0.5 KB)
+0014.770 (0) Table wp_amelia_services: Total expected rows (approximate): 4
+0014.952 (0) Table wp_amelia_services: Total rows added: 4 in 0.01 seconds
+0015.013 (0) Table wp_amelia_services: finishing file (backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_amelia_services.table.gz - 0.8 KB)
+0015.276 (0) Table wp_amelia_services_views: Total expected rows (approximate): 13
+0015.408 (0) Table wp_amelia_services_views: Total rows added: 13 in 0.05 seconds
+0015.490 (0) Table wp_amelia_services_views: finishing file (backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_amelia_services_views.table.gz - 0.5 KB)
+0016.035 (0) Table wp_amelia_users: Total expected rows (approximate): 5
+0016.159 (0) Table wp_amelia_users: Total rows added: 5 in 0.04 seconds
+0016.251 (0) Table wp_amelia_users: finishing file (backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_amelia_users.table.gz - 0.6 KB)
+0016.434 (0) Table wp_learnpress_order_itemmeta: Total expected rows (approximate): 0
+0016.568 (0) Table wp_learnpress_order_itemmeta: Total rows added: 0 in 0.06 seconds
+0016.676 (0) Table wp_learnpress_order_itemmeta: finishing file (backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_learnpress_order_itemmeta.table.gz - 0.4 KB)
+0016.894 (0) Table wp_learnpress_order_items: Total expected rows (approximate): 0
+0016.968 (0) Table wp_learnpress_order_items: Total rows added: 0 in 0.01 seconds
+0017.043 (0) Table wp_learnpress_order_items: finishing file (backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_learnpress_order_items.table.gz - 0.3 KB)
+0017.258 (0) Table wp_learnpress_question_answermeta: Total expected rows (approximate): 8
+0017.311 (0) Table wp_learnpress_question_answermeta: Total rows added: 8 in 0.01 seconds
+0017.369 (0) Table wp_learnpress_question_answermeta: finishing file (backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_learnpress_question_answermeta.table.gz - 0.5 KB)
+0017.661 (0) Table wp_learnpress_question_answers: Total expected rows (approximate): 10
+0017.804 (0) Table wp_learnpress_question_answers: Total rows added: 10 in 0.06 seconds
+0017.853 (0) Table wp_learnpress_question_answers: finishing file (backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_learnpress_question_answers.table.gz - 1 KB)
+0018.036 (0) Table wp_learnpress_quiz_questions: Total expected rows (approximate): 4
+0018.156 (0) Table wp_learnpress_quiz_questions: Total rows added: 4 in 0.05 seconds
+0018.308 (0) Table wp_learnpress_quiz_questions: finishing file (backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_learnpress_quiz_questions.table.gz - 0.4 KB)
+0018.528 (0) Table wp_learnpress_review_logs: Total expected rows (approximate): 5
+0018.645 (0) Table wp_learnpress_review_logs: Total rows added: 5 in 0.06 seconds
+0018.719 (0) Table wp_learnpress_review_logs: finishing file (backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_learnpress_review_logs.table.gz - 0.5 KB)
+0018.909 (0) Table wp_learnpress_section_items: Total expected rows (approximate): 6
+0019.003 (0) Table wp_learnpress_section_items: Total rows added: 6 in 0.04 seconds
+0019.062 (0) Table wp_learnpress_section_items: finishing file (backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_learnpress_section_items.table.gz - 0.4 KB)
+0019.277 (0) Table wp_learnpress_sections: Total expected rows (approximate): 3
+0019.406 (0) Table wp_learnpress_sections: Total rows added: 3 in 0.05 seconds
+0019.462 (0) Table wp_learnpress_sections: finishing file (backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_learnpress_sections.table.gz - 0.5 KB)
+0019.765 (0) Table wp_learnpress_sessions: Total expected rows (approximate): 7
+0019.846 (0) Table wp_learnpress_sessions: Total rows added: 7 in 0.01 seconds
+0019.884 (0) Table wp_learnpress_sessions: finishing file (backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_learnpress_sessions.table.gz - 0.7 KB)
+0020.104 (0) Table wp_learnpress_user_itemmeta: Total expected rows (approximate): 13
+0020.151 (0) Table wp_learnpress_user_itemmeta: Total rows added: 13 in 0.01 seconds
+0020.201 (0) Table wp_learnpress_user_itemmeta: finishing file (backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_learnpress_user_itemmeta.table.gz - 0.7 KB)
+0020.584 (0) Table wp_learnpress_user_items: Total expected rows (approximate): 4
+0020.671 (0) Table wp_learnpress_user_items: Total rows added: 4 in 0.01 seconds
+0020.748 (0) Table wp_learnpress_user_items: finishing file (backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_learnpress_user_items.table.gz - 0.6 KB)
+0021.062 (0) Table wp_nf3_action_meta: Total expected rows (approximate): 126
+0021.135 (0) Table wp_nf3_action_meta: Total rows added: 126 in 0.01 seconds
+0021.177 (0) Table wp_nf3_action_meta: finishing file (backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_nf3_action_meta.table.gz - 1.3 KB)
+0021.755 (0) Table wp_nf3_actions: Total expected rows (approximate): 6
+0021.860 (0) Table wp_nf3_actions: Total rows added: 6 in 0.05 seconds
+0021.985 (0) Table wp_nf3_actions: finishing file (backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_nf3_actions.table.gz - 0.5 KB)
+0022.230 (0) Table wp_nf3_chunks: Total expected rows (approximate): 0
+0022.364 (0) Table wp_nf3_chunks: Total rows added: 0 in 0.01 seconds
+0022.497 (0) Table wp_nf3_chunks: finishing file (backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_nf3_chunks.table.gz - 0.3 KB)
+0022.799 (0) Table wp_nf3_field_meta: Total expected rows (approximate): 133
+0023.040 (0) Table wp_nf3_field_meta: Total rows added: 133 in 0.13 seconds
+0023.195 (0) Table wp_nf3_field_meta: finishing file (backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_nf3_field_meta.table.gz - 1.3 KB)
+0023.422 (0) Table wp_nf3_fields: Total expected rows (approximate): 10
+0023.520 (0) Table wp_nf3_fields: Total rows added: 10 in 0.03 seconds
+0023.585 (0) Table wp_nf3_fields: finishing file (backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_nf3_fields.table.gz - 0.6 KB)
+0023.979 (0) Table wp_nf3_form_meta: Total expected rows (approximate): 36
+0024.383 (0) Table wp_nf3_form_meta: Total rows added: 36 in 0.20 seconds
+0024.527 (0) Table wp_nf3_form_meta: finishing file (backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_nf3_form_meta.table.gz - 1.4 KB)
+0024.806 (0) Table wp_nf3_forms: Total expected rows (approximate): 2
+0024.953 (0) Table wp_nf3_forms: Total rows added: 2 in 0.02 seconds
+0025.015 (0) Table wp_nf3_forms: finishing file (backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_nf3_forms.table.gz - 0.4 KB)
+0025.389 (0) Table wp_nf3_object_meta: Total expected rows (approximate): 0
+0025.493 (0) Table wp_nf3_object_meta: Total rows added: 0 in 0.05 seconds
+0025.553 (0) Table wp_nf3_object_meta: finishing file (backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_nf3_object_meta.table.gz - 0.3 KB)
+0025.894 (0) Table wp_nf3_objects: Total expected rows (approximate): 0
+0025.958 (0) Table wp_nf3_objects: Total rows added: 0 in 0.01 seconds
+0026.009 (0) Table wp_nf3_objects: finishing file (backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_nf3_objects.table.gz - 0.4 KB)
+0026.277 (0) Table wp_nf3_relationships: Total expected rows (approximate): 0
+0026.387 (0) Table wp_nf3_relationships: Total rows added: 0 in 0.01 seconds
+0026.435 (0) Table wp_nf3_relationships: finishing file (backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_nf3_relationships.table.gz - 0.4 KB)
+0026.709 (0) Table wp_nf3_upgrades: Total expected rows (approximate): 0
+0026.931 (0) Table wp_nf3_upgrades: Total rows added: 0 in 0.13 seconds
+0027.158 (0) Table wp_nf3_upgrades: finishing file (backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_nf3_upgrades.table.gz - 0.3 KB)
+0027.451 (0) Table wp_pantheon_sessions: Total expected rows (approximate): 1
+0027.566 (0) Table wp_pantheon_sessions: Total rows added: 1 in 0.02 seconds
+0027.706 (0) Table wp_pantheon_sessions: finishing file (backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_pantheon_sessions.table.gz - 0.7 KB)
+0028.055 (0) Table wp_revslider_css: Total expected rows (approximate): 109
+0028.137 (0) Table wp_revslider_css: Total rows added: 109 in 0.02 seconds
+0028.203 (0) Table wp_revslider_css: finishing file (backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_revslider_css.table.gz - 4.8 KB)
+0028.422 (0) Table wp_revslider_layer_animations: Total expected rows (approximate): 0
+0028.507 (0) Table wp_revslider_layer_animations: Total rows added: 0 in 0.01 seconds
+0028.590 (0) Table wp_revslider_layer_animations: finishing file (backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_revslider_layer_animations.table.gz - 0.3 KB)
+0028.756 (0) Table wp_revslider_navigations: Total expected rows (approximate): 0
+0028.907 (0) Table wp_revslider_navigations: Total rows added: 0 in 0.02 seconds
+0028.954 (0) Table wp_revslider_navigations: finishing file (backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_revslider_navigations.table.gz - 0.3 KB)
+0029.117 (0) Table wp_revslider_sliders: Total expected rows (approximate): 6
+0029.259 (0) Table wp_revslider_sliders: Total rows added: 6 in 0.03 seconds
+0029.318 (0) Table wp_revslider_sliders: finishing file (backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_revslider_sliders.table.gz - 4.7 KB)
+0029.677 (0) Table wp_revslider_slides: Total expected rows (approximate): 9
+0029.810 (0) Table wp_revslider_slides: Total rows added: 16 in 0.07 seconds
+0030.045 (0) Table wp_revslider_slides: finishing file (backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_revslider_slides.table.gz - 15.3 KB)
+0030.536 (0) Table wp_revslider_static_slides: Total expected rows (approximate): 0
+0030.767 (0) Table wp_revslider_static_slides: Total rows added: 0 in 0.07 seconds
+0030.858 (0) Table wp_revslider_static_slides: finishing file (backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_revslider_static_slides.table.gz - 0.3 KB)
+0031.308 (0) Table wp_smush_dir_images: Total expected rows (approximate): 0
+0031.429 (0) Table wp_smush_dir_images: Total rows added: 0 in 0.01 seconds
+0031.548 (0) Table wp_smush_dir_images: finishing file (backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_smush_dir_images.table.gz - 0.4 KB)
+0031.936 (0) Table wp_wc_download_log: Total expected rows (approximate): 0
+0032.328 (0) Table wp_wc_download_log: Total rows added: 0 in 0.08 seconds
+0032.429 (0) Table wp_wc_download_log: finishing file (backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_wc_download_log.table.gz - 0.5 KB)
+0032.920 (0) Table wp_wc_webhooks: Total expected rows (approximate): 0
+0033.044 (0) Table wp_wc_webhooks: Total rows added: 0 in 0.02 seconds
+0033.134 (0) Table wp_wc_webhooks: finishing file (backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_wc_webhooks.table.gz - 0.5 KB)
+0033.499 (0) Table wp_wdi_feeds: Total expected rows (approximate): 3
+0033.834 (0) Table wp_wdi_feeds: Total rows added: 3 in 0.09 seconds
+0034.014 (0) Table wp_wdi_feeds: finishing file (backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_wdi_feeds.table.gz - 1.3 KB)
+0034.273 (0) Table wp_wdi_themes: Total expected rows (approximate): 2
+0034.358 (0) Table wp_wdi_themes: Total rows added: 2 in 0.02 seconds
+0034.446 (0) Table wp_wdi_themes: finishing file (backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_wdi_themes.table.gz - 2.3 KB)
+0034.779 (0) Table wp_woocommerce_api_keys: Total expected rows (approximate): 0
+0034.896 (0) Table wp_woocommerce_api_keys: Total rows added: 0 in 0.08 seconds
+0035.096 (0) Table wp_woocommerce_api_keys: finishing file (backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_woocommerce_api_keys.table.gz - 0.4 KB)
+0035.435 (0) Table wp_woocommerce_attribute_taxonomies: Total expected rows (approximate): 0
+0035.519 (0) Table wp_woocommerce_attribute_taxonomies: Total rows added: 0 in 0.01 seconds
+0035.686 (0) Table wp_woocommerce_attribute_taxonomies: finishing file (backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_woocommerce_attribute_taxonomies.table.gz - 0.4 KB)
+0036.022 (0) Table wp_woocommerce_downloadable_product_permissions: Total expected rows (approximate): 0
+0036.100 (0) Table wp_woocommerce_downloadable_product_permissions: Total rows added: 0 in 0.01 seconds
+0036.349 (0) Table wp_woocommerce_downloadable_product_permissions: finishing file (backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_woocommerce_downloadable_product_permissions.table.gz - 0.5 KB)
+0036.684 (0) Table wp_woocommerce_log: Total expected rows (approximate): 0
+0036.921 (0) Table wp_woocommerce_log: Total rows added: 0 in 0.12 seconds
+0037.444 (0) Table wp_woocommerce_log: finishing file (backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_woocommerce_log.table.gz - 0.4 KB)
+0038.246 (0) Table wp_woocommerce_order_items: Total expected rows (approximate): 0
+0038.348 (0) Table wp_woocommerce_order_items: Total rows added: 0 in 0.01 seconds
+0038.472 (0) Table wp_woocommerce_order_items: finishing file (backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_woocommerce_order_items.table.gz - 0.4 KB)
+0039.006 (0) Table wp_woocommerce_payment_tokens: Total expected rows (approximate): 0
+0039.487 (0) Table wp_woocommerce_payment_tokens: Total rows added: 0 in 0.24 seconds
+0039.547 (0) Table wp_woocommerce_payment_tokens: finishing file (backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_woocommerce_payment_tokens.table.gz - 0.4 KB)
+0039.748 (0) Table wp_woocommerce_sessions: Total expected rows (approximate): 1
+0039.943 (0) Table wp_woocommerce_sessions: Total rows added: 1 in 0.07 seconds
+0040.056 (0) Table wp_woocommerce_sessions: finishing file (backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_woocommerce_sessions.table.gz - 0.8 KB)
+0040.329 (0) Table wp_woocommerce_shipping_zone_locations: Total expected rows (approximate): 0
+0040.420 (0) Table wp_woocommerce_shipping_zone_locations: Total rows added: 0 in 0.02 seconds
+0040.484 (0) Table wp_woocommerce_shipping_zone_locations: finishing file (backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_woocommerce_shipping_zone_locations.table.gz - 0.4 KB)
+0040.739 (0) Table wp_woocommerce_shipping_zone_methods: Total expected rows (approximate): 0
+0040.795 (0) Table wp_woocommerce_shipping_zone_methods: Total rows added: 0 in 0.01 seconds
+0040.867 (0) Table wp_woocommerce_shipping_zone_methods: finishing file (backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_woocommerce_shipping_zone_methods.table.gz - 0.4 KB)
+0041.135 (0) Table wp_woocommerce_shipping_zones: Total expected rows (approximate): 0
+0041.262 (0) Table wp_woocommerce_shipping_zones: Total rows added: 0 in 0.06 seconds
+0041.338 (0) Table wp_woocommerce_shipping_zones: finishing file (backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_woocommerce_shipping_zones.table.gz - 0.3 KB)
+0041.539 (0) Table wp_woocommerce_tax_rate_locations: Total expected rows (approximate): 0
+0041.611 (0) Table wp_woocommerce_tax_rate_locations: Total rows added: 0 in 0.02 seconds
+0041.662 (0) Table wp_woocommerce_tax_rate_locations: finishing file (backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_woocommerce_tax_rate_locations.table.gz - 0.4 KB)
+0041.857 (0) Table wp_woocommerce_tax_rates: Total expected rows (approximate): 0
+0041.987 (0) Table wp_woocommerce_tax_rates: Total rows added: 0 in 0.07 seconds
+0042.107 (0) Table wp_woocommerce_tax_rates: finishing file (backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_woocommerce_tax_rates.table.gz - 0.4 KB)
+0042.383 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_options.table.gz (1/88): adding to final database dump
+0042.601 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_users.table.gz (2/88): adding to final database dump
+0042.901 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_usermeta.table.gz (3/88): adding to final database dump
+0042.960 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_commentmeta.table.gz (4/88): adding to final database dump
+0043.048 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_comments.table.gz (5/88): adding to final database dump
+0043.135 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_links.table.gz (6/88): adding to final database dump
+0043.200 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_postmeta.table.gz (7/88): adding to final database dump
+0043.352 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_posts.table.gz (8/88): adding to final database dump
+0043.663 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_term_relationships.table.gz (9/88): adding to final database dump
+0043.801 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_term_taxonomy.table.gz (10/88): adding to final database dump
+0043.861 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_termmeta.table.gz (11/88): adding to final database dump
+0043.934 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_terms.table.gz (12/88): adding to final database dump
+0044.028 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_wc_product_meta_lookup.table.gz (13/88): adding to final database dump
+0044.096 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_wc_tax_rate_classes.table.gz (14/88): adding to final database dump
+0044.204 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_woocommerce_order_itemmeta.table.gz (15/88): adding to final database dump
+0044.411 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_woocommerce_payment_tokenmeta.table.gz (16/88): adding to final database dump
+0044.561 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_yoast_seo_links.table.gz (17/88): adding to final database dump
+0044.682 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_yoast_seo_meta.table.gz (18/88): adding to final database dump
+0044.746 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_amelia_appointments.table.gz (19/88): adding to final database dump
+0044.813 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_amelia_categories.table.gz (20/88): adding to final database dump
+0044.868 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_amelia_coupons.table.gz (21/88): adding to final database dump
+0044.930 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_amelia_coupons_to_services.table.gz (22/88): adding to final database dump
+0045.000 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_amelia_customer_bookings.table.gz (23/88): adding to final database dump
+0045.087 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_amelia_customer_bookings_to_extras.table.gz (24/88): adding to final database dump
+0045.158 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_amelia_discounts.table.gz (25/88): adding to final database dump
+0045.291 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_amelia_extras.table.gz (26/88): adding to final database dump
+0045.445 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_amelia_galleries.table.gz (27/88): adding to final database dump
+0045.586 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_amelia_locations.table.gz (28/88): adding to final database dump
+0045.719 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_amelia_locations_views.table.gz (29/88): adding to final database dump
+0045.902 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_amelia_notifications.table.gz (30/88): adding to final database dump
+0045.964 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_amelia_notifications_log.table.gz (31/88): adding to final database dump
+0046.070 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_amelia_payments.table.gz (32/88): adding to final database dump
+0046.149 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_amelia_providers_to_daysoff.table.gz (33/88): adding to final database dump
+0046.218 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_amelia_providers_to_google_calendar.table.gz (34/88): adding to final database dump
+0046.376 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_amelia_providers_to_locations.table.gz (35/88): adding to final database dump
+0046.492 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_amelia_providers_to_services.table.gz (36/88): adding to final database dump
+0046.596 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_amelia_providers_to_timeouts.table.gz (37/88): adding to final database dump
+0046.703 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_amelia_providers_to_weekdays.table.gz (38/88): adding to final database dump
+0046.875 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_amelia_providers_views.table.gz (39/88): adding to final database dump
+0046.948 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_amelia_services.table.gz (40/88): adding to final database dump
+0047.011 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_amelia_services_views.table.gz (41/88): adding to final database dump
+0047.079 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_amelia_users.table.gz (42/88): adding to final database dump
+0047.133 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_learnpress_order_itemmeta.table.gz (43/88): adding to final database dump
+0047.195 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_learnpress_order_items.table.gz (44/88): adding to final database dump
+0047.249 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_learnpress_question_answermeta.table.gz (45/88): adding to final database dump
+0047.311 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_learnpress_question_answers.table.gz (46/88): adding to final database dump
+0047.386 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_learnpress_quiz_questions.table.gz (47/88): adding to final database dump
+0047.476 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_learnpress_review_logs.table.gz (48/88): adding to final database dump
+0047.547 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_learnpress_section_items.table.gz (49/88): adding to final database dump
+0047.610 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_learnpress_sections.table.gz (50/88): adding to final database dump
+0047.674 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_learnpress_sessions.table.gz (51/88): adding to final database dump
+0047.739 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_learnpress_user_itemmeta.table.gz (52/88): adding to final database dump
+0047.793 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_learnpress_user_items.table.gz (53/88): adding to final database dump
+0047.876 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_nf3_action_meta.table.gz (54/88): adding to final database dump
+0047.954 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_nf3_actions.table.gz (55/88): adding to final database dump
+0048.016 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_nf3_chunks.table.gz (56/88): adding to final database dump
+0048.095 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_nf3_field_meta.table.gz (57/88): adding to final database dump
+0048.178 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_nf3_fields.table.gz (58/88): adding to final database dump
+0048.247 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_nf3_form_meta.table.gz (59/88): adding to final database dump
+0048.579 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_nf3_forms.table.gz (60/88): adding to final database dump
+0048.679 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_nf3_object_meta.table.gz (61/88): adding to final database dump
+0048.724 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_nf3_objects.table.gz (62/88): adding to final database dump
+0048.799 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_nf3_relationships.table.gz (63/88): adding to final database dump
+0048.861 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_nf3_upgrades.table.gz (64/88): adding to final database dump
+0048.943 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_pantheon_sessions.table.gz (65/88): adding to final database dump
+0048.988 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_revslider_css.table.gz (66/88): adding to final database dump
+0049.049 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_revslider_layer_animations.table.gz (67/88): adding to final database dump
+0049.097 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_revslider_navigations.table.gz (68/88): adding to final database dump
+0049.148 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_revslider_sliders.table.gz (69/88): adding to final database dump
+0049.208 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_revslider_slides.table.gz (70/88): adding to final database dump
+0049.275 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_revslider_static_slides.table.gz (71/88): adding to final database dump
+0049.336 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_smush_dir_images.table.gz (72/88): adding to final database dump
+0049.422 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_wc_download_log.table.gz (73/88): adding to final database dump
+0049.476 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_wc_webhooks.table.gz (74/88): adding to final database dump
+0049.522 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_wdi_feeds.table.gz (75/88): adding to final database dump
+0049.569 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_wdi_themes.table.gz (76/88): adding to final database dump
+0049.631 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_woocommerce_api_keys.table.gz (77/88): adding to final database dump
+0049.720 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_woocommerce_attribute_taxonomies.table.gz (78/88): adding to final database dump
+0049.807 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_woocommerce_downloadable_product_permissions.table.gz (79/88): adding to final database dump
+0049.916 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_woocommerce_log.table.gz (80/88): adding to final database dump
+0050.061 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_woocommerce_order_items.table.gz (81/88): adding to final database dump
+0050.219 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_woocommerce_payment_tokens.table.gz (82/88): adding to final database dump
+0050.299 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_woocommerce_sessions.table.gz (83/88): adding to final database dump
+0050.384 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_woocommerce_shipping_zone_locations.table.gz (84/88): adding to final database dump
+0050.447 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_woocommerce_shipping_zone_methods.table.gz (85/88): adding to final database dump
+0050.509 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_woocommerce_shipping_zones.table.gz (86/88): adding to final database dump
+0050.603 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_woocommerce_tax_rate_locations.table.gz (87/88): adding to final database dump
+0050.692 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db-table-wp_woocommerce_tax_rates.table.gz (88/88): adding to final database dump
+0050.812 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db.gz: finished writing out complete database file (728 KB)
+0051.445 (0) Total database tables backed up: 88 (backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db.gz, size: 771439, sha256)
+0051.761 (0) backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db.gz: db: This file has not yet been successfully uploaded: will queue
+0051.875 (0) Saving backup history. Total backup size: 753.4 KB
+0052.080 (0) Requesting upload of the files that have not yet been successfully uploaded (1)
+0052.639 (0) Cloud backup selection (1/1):  with instance (1/1) (last)
+0052.694 (0) No remote despatch: user chose no remote backup service
+0052.817 (0) Recording as successfully uploaded: backup_2020-01-02-0655_CREATE_THE_ADVANTAGE_90ba20335efb-db.gz (08a01bfdf0ed748016015d955b53b1da)
+0053.197 (0) Prune old backups from local store: nothing to do, since the user disabled local deletion and we are using local backups
+0053.267 (0) Resume backup (90ba20335efb, 0): finish run
+0054.042 (0) Decremented the semaphore (fd) by 1
+0054.370 (0) Semaphore (fd) unlocked
+0054.433 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0054.707 (0) No email will/can be sent - the user has not configured an email address.
+0054.787 (0) The backup apparently succeeded and is now complete

@@ -1,0 +1,1090 @@
+<?php
+/*
+ * Plugin Name: Theme Element
+ * Plugin URI: http://helloacademy.com/
+ * Author: Hello Expart
+ * Author URI: http://helloexpart.com/
+ * Version: 1.0.0
+ * Description:Demo Theme Element Plugin 
+*/	
+//***** =====================================		
+// About Me Section
+//******* ================================   		
+	function portfolio_about_section($attr, $content){
+		extract(shortcode_atts(array(
+			'abt_icon_img'			=> '',
+			'abt_title'				=> '',
+			'abt_desc'				=> '',
+			'abt_title_color'		=> '',
+			'abt_desc_color'		=> '',
+			'busi_book_icon'		=> '',
+			'abt_signe_img'			=> '',
+			'abt_button_link'		=> '',
+			'abt_button_title'		=> '',
+			'abt_profile_img'		=> '',
+			//abt grp
+			'about'					=> '',
+			'abt_grp_title'			=> '',
+			'abt_grp_desc'			=> '',
+			'abt_title_grp_color'	=> '',
+			'abt_desc_grp_color'	=> '',
+			//social grp
+			'social'				=> '',
+			'abt_social_link'		=> '',
+			'abt_soci_icon'			=> '',
+		), $attr)
+	);
+	ob_start(); ?>	
+<!-- about-me start -->
+<section id="portfolio-about-me" class="text-center">
+	<div class="container">
+		<div class="portfolio-section-title text-center">
+		   <h2 class="wow fadeInUp" data-wow-delay="300ms" style= "color: <?php echo esc_attr($abt_title_color);?>;"><?php echo esc_html__($abt_title);?></h2>
+		   <p class="wow fadeInUp" data-wow-delay="400ms" style= "color: <?php echo esc_attr($abt_desc_color);?>;"><?php echo esc_html__($abt_desc);?></p>
+		   <?php
+		   if(!empty ($abt_icon_img)){ ?>
+		    <img src="<?php echo esc_url(wp_get_attachment_image_src($abt_icon_img, 'full' )[0]);?>" alt="<?php esc_html_e('Portfolio','portfolio');?>">
+		   <?php }else{ ?>
+			<div class="b-icon">
+				<i class="<?php echo esc_attr($busi_book_icon);?>" aria-hidden="true"></i>
+			</div>
+			<?php } ?>
+		</div>
+		<div class="about-content">
+		   <div class="row">
+				<div class="col-md-5">
+					<div class="portfolio-about-info text-left">
+						<ul>
+							<?php
+								$about_key =  vc_param_group_parse_atts($about);
+								if($about_key):
+								$i=300;
+								foreach($about_key as $about_value):
+								$i+=50;							
+							?>
+								<li class="wow fadeInUp" data-wow-delay="<?php echo $i;?>ms">
+								<?php
+									if(!empty ( $about_value['abt_grp_title'])) { ?>
+									<span style= "color: <?php echo esc_attr($about_value['abt_title_grp_color']);?>;"><?php echo esc_html__($about_value['abt_grp_title']);?></span>
+								<?php }else{ 
+									echo""; 
+								 } ?>
+								<?php
+									if(!empty ( $about_value['abt_grp_desc'])) { ?>
+									<p style= "color: <?php echo esc_attr($about_value['abt_desc_grp_color']);?>;"><?php echo esc_html__($about_value['abt_grp_desc']);?></p>
+								<?php }else{ 
+									echo""; 
+								 } ?>
+								</li>
+							<?php endforeach; endif;?>
+						</ul>
+						<div class="signature wow fadeInUp" data-wow-delay="550ms">
+						   <?php
+							if(!empty ($abt_signe_img)) { ?>
+								<img src="<?php echo esc_url(wp_get_attachment_image_src($abt_signe_img, 'full' )[0]);?>" alt="<?php esc_html_e('Portfolio','portfolio');?>">
+							<?php }else{ 
+							echo""; 
+						} ?>
+						</div>
+						<div class="s-icon wow fadeInUp" data-wow-delay="600ms">
+						
+						<?php
+							$social_key =  vc_param_group_parse_atts($social);
+							if($social_key):
+							foreach($social_key as $social_value):				
+						?>
+						   <a href="<?php echo esc_url($social_value['abt_social_link']);?>"><i class="<?php echo esc_attr($social_value['abt_soci_icon']);?>"></i></a>
+						<?php endforeach; endif;?>
+						</div>
+						<a href="<?php echo esc_url($abt_button_link);?>" class="pfolio-btn wow fadeInUp" data-wow-delay="650ms"><?php echo esc_html__($abt_button_title);?></a>
+				</div>
+				</div>
+				<div class="col-md-offset-2 col-md-5">
+					<div class="pfolio-about-img">
+						<?php
+						if(!empty ($abt_profile_img)) { ?>
+							<img src="<?php echo esc_url(wp_get_attachment_image_src($abt_profile_img, 'full' )[0]);?>" alt="<?php esc_html_e('Portfolio','portfolio');?>">
+						<?php }else{ 
+						echo""; 
+					} ?>
+					</div>
+				</div>
+			</div>
+		</div>
+	 </div>
+</section>
+<!-- abot-me end -->
+<?php 
+	return ob_get_clean();
+}
+add_shortcode('about_section', 'portfolio_about_section');	
+//***** =====================================		
+// Counter Section
+//******* ================================   
+	function portfolio_counter_section($attr, $content){
+		extract(shortcode_atts(array(
+				//abt grp
+				'counter'				=> '',
+				'count_grp_img'			=> '',
+				'counter_grp_icon'		=> '',
+				'count_grp_text'		=> '',
+				'count_grp_text_clr'	=> '',
+				'count_grp_title'		=> '',
+				'count_grp_title_clr'	=> '',
+			), $attr)
+		);
+	ob_start(); ?>	
+<!-- counter-secondary start-->
+<section id="counter-sec">
+	<div class="portfolio-counter-sec">
+		<div class="container">
+			<div class="counter-content">
+				<div class="row">
+				<?php
+					$counter_key =  vc_param_group_parse_atts($counter);
+					if($counter_key):
+					$i=300;
+					foreach($counter_key as $counter_value):
+					$i+=100;
+				?>
+					<div class="col-md-4 wow fadeInUp" data-wow-delay="<?php echo $i;?>ms">
+						<div class="portfolio-conuter-single text-center">
+						   <?php
+							   if(!empty ( $counter_value['count_grp_img'])) { ?>
+									<img src="<?php echo esc_url(wp_get_attachment_image_src( $counter_value['count_grp_img'], 'full') [0]); ?>" alt="<?php esc_html_e('portfolio','portfolio');?>">
+							   <?php }else{ ?>
+									<div class="b-icon">
+										<i class="<?php echo esc_attr($counter_value['counter_grp_icon']);?>" aria-hidden="true"></i>
+									</div>
+							<?php } ?>
+						   <?php
+								if(!empty ( $counter_value['count_grp_text'])) { ?>
+									<h2 class="counter" style= "color:<?php echo esc_attr($counter_value['count_grp_text_clr']);?>;"><?php echo esc_html__($counter_value['count_grp_text']);?></h2>
+								<?php }else{ 
+								echo""; 
+							} ?>
+							<?php
+								if(!empty ( $counter_value['count_grp_title'])) { ?>
+									<h4 style= "color:<?php echo esc_attr($counter_value['count_grp_title_clr']);?>;"><?php echo esc_html__($counter_value['count_grp_title']);?></h4>
+								<?php }else{ 
+								echo""; 
+							} ?>
+						</div>
+					</div>
+				<?php endforeach; endif;?>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- counter-sec end-->
+<?php 
+	return ob_get_clean();
+}
+add_shortcode('counter_section', 'portfolio_counter_section');
+//***** =====================================		
+// Skill Section
+//******* ================================   		
+	function portfolio_skill_section($attr, $content){
+		extract(shortcode_atts(array(
+			'skill_title'				=> '',
+			'skill_title_color'			=> '',
+			'skill_info'				=> '',
+			'skill_info_color'			=> '',
+			'skill_title_icon'			=> '',
+			'skill_icon_img'			=> '',
+			//abt grp
+			'skill'						=> '',
+			'skill_grp_black_img'		=> '',
+			'skill_grp_yellow_img'		=> '',
+			'skill_grp_icon'			=> '',
+			'skill_grp_title'			=> '',
+			'skill_title_grp_color'		=> '',
+			'skill_grp_desc'			=> '',
+			'skill_desc_grp_color'		=> '',
+		), $attr)
+	);
+	ob_start(); ?>	
+<!-- skill-sec start-->
+<section id="skill-sec">
+	<div class="portfolio-skill-sec text-center">
+		<div class="container">
+			<div class="portfolio-section-title text-center">
+				<h2 style= "color: <?php echo esc_attr($skill_title_color);?>;" class="wow fadeInUp" data-wow-delay="300ms"><?php echo esc_html__($skill_title);?></h2>
+				<p style= "color: <?php echo esc_attr($skill_info_color);?>;" class="wow fadeInUp" data-wow-delay="400ms"><?php echo esc_html__($skill_info);?></h2></p>
+				<!-- <i class="flaticon-two-settings-cogwheels"></i> -->
+				<?php
+				   if(!empty ($skill_icon_img)){ ?>
+				   <img src="<?php echo esc_url(wp_get_attachment_image_src($skill_icon_img, 'full' )[0]);?>" alt="<?php esc_html_e('Portfolio','portfolio');?>">
+				   <?php }else{ ?>
+					<div class="b-icon">
+						<i class="<?php echo esc_attr($skill_title_icon);?>" aria-hidden="true"></i>
+					</div>
+				<?php } ?>
+			</div>
+			<div class="portfolio-skill-content text-left">
+				<div class="row">
+				<?php
+					$skill_key =  vc_param_group_parse_atts($skill);
+					if($skill_key):
+					$i=300;
+					foreach($skill_key as $skill_value):
+					$i+=200;					
+				?>
+				<div class="col-md-4 wow fadeInUp" data-wow-duration="1s" data-wow-delay="<?php echo $i;?>ms">
+					<div class="portfolio-skill-single">
+					   <div class="row">
+							<div class="col-md-2 col-sm-2 col-xs-2">
+							 <?php 
+								if(!empty ($skill_value['skill_grp_black_img']) && ($skill_value['skill_grp_yellow_img']) ){ ?>
+									<div class="icn"><img src="<?php echo esc_url(wp_get_attachment_image_src( $skill_value['skill_grp_black_img'], 'full') [0]); ?>" alt="<?php esc_html_e('portfolio','portfolio');?>">
+									</div>
+									<div class="icn2"><img src="<?php echo esc_url(wp_get_attachment_image_src( $skill_value['skill_grp_yellow_img'], 'full') [0]); ?>" alt="<?php esc_html_e('portfolio','portfolio');?>"></div>
+								<?php }  else{ ?>
+									<div class="b-icon">
+										<i class="<?php echo esc_attr($skill_value['skill_grp_icon']);?>" aria-hidden="true"></i>
+									</div>
+								<?php } ?>
+							</div>
+							<div class="col-md-10 col-sm-10 col-xs-10">
+							<?php
+								if(!empty ( $skill_value['skill_grp_title'])) { ?>
+									<h3 style= "color: <?php echo esc_attr($skill_value['skill_title_grp_color']);?>;"><?php echo esc_html__($skill_value['skill_grp_title']);?></h3>
+								<?php }else{ 
+								echo""; 
+							} ?>
+							<?php
+								if(!empty ( $skill_value['skill_grp_desc'])) { ?>
+									<p style= "color: <?php echo esc_attr($skill_value['skill_desc_grp_color']);?>;"><?php echo esc_html__($skill_value['skill_grp_desc']);?></p>
+								<?php }else{ 
+								echo""; 
+							} ?>
+							</div>
+					   </div>
+					</div>
+				</div>
+				<?php endforeach; endif;?>
+			  </div>
+		   </div>
+		</div>
+	</div>
+</section>
+<!-- skill-sec end-->	
+<?php 
+	return ob_get_clean();
+}
+add_shortcode('skill_section', 'portfolio_skill_section');
+//***** =====================================		
+// Education Section
+//******* ================================   		
+	function portfolio_edu_section($attr, $content){
+		extract(shortcode_atts(array(
+			'edu_title'				=> '',
+			'edu_title_color'		=> '',
+			'edu_info'				=> '',
+			'edu_info_color'		=> '',
+			'edu_title_icon'		=> '',
+			'edu_icon_img'			=> '',
+			'edu_human_img'			=> '',
+			//abt grp
+			'education'				=> '',
+			'edu_grp_no'			=> '',
+			'edu_grp_no_clr'		=> '',
+			'edu_grp_title'			=> '',
+			'edu_title_grp_color'	=> '',
+			'edu_grp_desig'			=> '',
+			'edu_desig_grp_color'	=> '',
+			'edu_grp_yer'			=> '',
+			'edu_grp_yer_color'		=> '',
+		), $attr)
+	);
+	ob_start(); ?>		
+<!-- education start -->
+<section id="education">
+	<div class="portfolio-education text-center">
+		<div class="container-fluid">
+			<div class="portfolio-section-title text-center">
+				<h2 style= "color: <?php echo esc_attr($edu_title_color);?>;" class="wow fadeInUp" data-wow-delay="300ms"><?php echo esc_html__($edu_title);?></h2>
+				<p style= "color: <?php echo esc_attr($edu_info_color);?>;" class="wow fadeInUp" data-wow-delay="400ms"><?php echo esc_html__($edu_info);?></h2></p>
+				<?php
+				   if(!empty ($edu_icon_img)){ ?>
+				   <img src="<?php echo esc_url(wp_get_attachment_image_src($edu_icon_img, 'full' )[0]);?>" alt="<?php esc_html_e('Portfolio','portfolio');?>">
+				   <?php }else{ ?>
+					<div class="b-icon">
+						<i class="<?php echo esc_attr($edu_title_icon);?>" aria-hidden="true"></i>
+					</div>
+				<?php } ?>
+			</div>
+			<div class="education-content">
+				<div class="row">
+					<div class="col-md-4 col-sm-12 nopadding">
+						<div class="portfolio-edu-img">
+							<img src="<?php echo esc_url(wp_get_attachment_image_src($edu_human_img, 'full' )[0]);?>" alt="<?php esc_html_e('Portfolio','portfolio');?>">
+						</div>
+					</div>
+					<div class="col-md-8 col-sm-12 nopadding">
+						<div class="portfolio-edu-text text-left">
+							<div class="row">
+								<?php
+									$education_key =  vc_param_group_parse_atts($education);
+									if($education_key):
+									foreach($education_key as $education_value):					
+								?>
+								<div class="col-md-6 nopadding col-sm-6 col-xs-12">
+									<div class="edu-text-single">
+										<?php
+										if(!empty ( $education_value['edu_grp_no'])) { ?>
+											<h2 style= "color: <?php echo esc_attr($education_value['edu_grp_no_clr']);?>;"><?php echo esc_html__($education_value['edu_grp_no']);?></h2>
+										<?php }else{ 
+										echo""; 
+									} ?>
+										<div class="txt">
+										<?php
+											if(!empty ( $education_value['edu_grp_title'])) { ?>
+												<h3 style= "color: <?php echo esc_attr($education_value['edu_title_grp_color']);?>;"><?php echo esc_html__($education_value['edu_grp_title']);?></h3>
+											<?php }else{ 
+											echo""; 
+										} ?>
+										<?php
+											if(!empty ( $education_value['edu_grp_desig'])) { ?>
+												<p style= "color: <?php echo esc_attr($education_value['edu_desig_grp_color']);?>;"><?php echo esc_html__($education_value['edu_grp_desig']);?></p>
+											<?php }else{ 
+											echo""; 
+										} ?>
+										<?php
+											if(!empty ( $education_value['edu_grp_yer'])) { ?>
+												<p style= "color: <?php echo esc_attr($education_value['edu_grp_yer_color']);?>;"><?php echo esc_html__($education_value['edu_grp_yer']);?></p>
+											<?php }else{ 
+											echo""; 
+										} ?>
+										</div>
+									</div>
+								<!-- /.edu-text-single -->
+								</div>
+							<!-- /.col-md-6 -->
+							<?php endforeach; endif;?>
+							</div>
+						<!-- /.row -->
+						</div>
+					<!-- /.edu-text -->
+					</div>
+				<!-- /.col-md-8 -->
+				</div>
+			<!-- /.row -->
+			</div>
+	   <!-- /.education-content -->
+		</div>
+	<!-- /.container-fluid -->
+	</div>
+ <!-- /.education -->
+</section>
+<!-- education end -->
+<?php 
+	return ob_get_clean();
+}
+add_shortcode('education_section', 'portfolio_edu_section');
+//***** =====================================		
+// Portfolio Section
+//******* ================================   		
+	function portfolio_isotop_section($attr, $content){
+		extract(shortcode_atts(array(
+					'port_info'				=> '',
+					'port_info_color'		=> '',
+					'port_title'			=> '',
+					'port_title_color'		=> '',
+					'port_icon_img'			=> '',
+					'port_term_icon'		=> '',
+					'port_term_img'			=> '',
+					'port_title_icon'		=> '',
+					'current_page'			=> '',
+				), $attr)
+		);
+	ob_start(); ?>	
+<!-- portfolio start -->
+<div id="portfolio">
+	<div class="portfolio-portfolio text-center">
+		<div class="container-fluid">
+			<div class="portfolio-section-title text-center">
+				<h2 style= "color: <?php echo esc_attr($port_title_color);?>;" class="wow fadeInUp" data-wow-delay="300ms"><?php echo esc_html__($port_title);?></h2>
+				<p style= "color: <?php echo esc_attr($port_info_color);?>;" class="wow fadeInUp" data-wow-delay="400ms"><?php echo esc_html__($port_info);?></h2></p>
+				<!-- <i class="flaticon-two-settings-cogwheels"></i> -->
+				<?php
+				   if(!empty ($port_icon_img)){ ?>
+				   <img src="<?php echo esc_url(wp_get_attachment_image_src($port_icon_img, 'full' )[0]);?>" alt="<?php esc_html_e('Portfolio','portfolio');?>">
+				   <?php }else{ ?>
+					<div class="b-icon">
+						<i class="<?php echo esc_attr($port_title_icon);?>" aria-hidden="true"></i>
+					</div>
+				<?php } ?>
+			</div>
+			<div class="gallery_filter portfolio">
+				<ul>
+				 <li data-filter="*" class="active"><a href=""><?php echo esc_html__('ALL');?></a></li>
+					<?php 
+						$terms = get_terms( 'port_category' );
+						if ( ! empty( $terms ) && ! is_wp_error( $terms ) ){
+							foreach ( $terms as $term ) { ?>
+								<li data-filter=".<?php echo esc_attr($term->slug); ?>"><a href=""><?php echo esc_html($term->name); ?></a></li>
+							<?php
+							}
+						}
+					?>
+				</ul>
+			</div>
+			<!-- /.gallery_filter -->
+			<div class="row">
+				<div class="gallery_items portfolio">
+				 <div class="single_item_sizer_portfolio"></div>
+				<?php 
+					$portfolio_port_post= new WP_Query(array(
+						'post_type'=>'portfolio',
+						'taxonomy'=>'port_category',
+						'order'=>'ASC',
+						'posts_per_page'=>$current_page,
+						));
+					if($portfolio_port_post->have_posts()) : while($portfolio_port_post->have_posts()) : $portfolio_port_post->the_post();
+					
+					$terms = get_the_terms( get_the_ID(), 'port_category' );
+					if ( $terms && ! is_wp_error( $terms ) ) :
+					
+						$draught_links = array();
+						foreach ( $terms as $term ) {
+							$draught_links[] = $term->slug;
+						}
+											 
+						$on_draught = join( " ", $draught_links );
+				?>
+				 <!-- .single_items -->	
+				<div class="single_item single_item_width4 portfolio <?php echo esc_attr( $on_draught ); ?>">
+					<div class="image">
+					   <a href="<?php echo esc_url(wp_get_attachment_url(get_post_thumbnail_id())); ?>" data-lightbox="gallery">
+							<?php if ( has_post_thumbnail() ) {
+									the_post_thumbnail();
+								} 
+							?>
+							<div class="overlay">
+							 <?php
+							   if(!empty ($port_term_img)){ ?>
+							   <img src="<?php echo esc_url(wp_get_attachment_image_src($port_term_img, 'full' )[0]);?>" alt="<?php esc_html_e('Portfolio','portfolio');?>">
+							   <?php }else{ ?>
+								<div class="b-icon">
+									<i class="<?php echo esc_attr($port_term_icon);?>" aria-hidden="true"></i>
+								</div>
+							<?php } ?>
+						  </div>
+					   </a>
+					</div>
+				</div>
+				 <!-- /.single_items -->
+				<?php endif; endwhile; endif;?>
+				</div>
+			  <!-- /.gallery_items -->
+		   </div>
+		   <!-- /.row -->
+		</div>
+	</div>
+</div>
+<!-- portfolio end -->
+<?php 
+	return ob_get_clean();
+}
+add_shortcode('Portfolio_section', 'portfolio_isotop_section');
+//***** =====================================		
+// Experience Section
+//******* ================================   			
+	function portfolio_exp_section($attr, $content){
+		extract(shortcode_atts(array(
+			'exp_title'				=> '',
+			'exp_title_color'		=> '',
+			'exp_info'				=> '',
+			'exp_info_color'		=> '',
+			'exp_title_icon'		=> '',
+			'exp_icon_img'			=> '',
+			//abt grp
+			'experience'			=> '',
+			'exp_grp_desc'			=> '',
+			'exp_desc_grp_color'	=> '',
+			'exp_grp_title'			=> '',
+			'exp_title_grp_color'	=> '',
+			'exp_grp_desig'			=> '',
+			'exp_desig_grp_color'	=> '',
+			'exp_grp_yer'			=> '',
+			'exp_grp_yer_color'		=> '',
+		), $attr)
+	);
+	ob_start(); ?>		
+<!-- experiences start -->
+<section id="experiences">
+	<div class="portfolio-experiences text-center">
+		<div class="container">
+			<div class="portfolio-section-title text-center">
+				<h2 style= "color: <?php echo esc_attr($exp_title_color);?>;" class="wow fadeInUp" data-wow-delay="300ms"><?php echo esc_html__($exp_title);?></h2>
+				<p style= "color: <?php echo esc_attr($exp_info_color);?>;" class="wow fadeInUp" data-wow-delay="400ms"><?php echo esc_html__($exp_info);?></h2></p>
+				<!-- <i class="flaticon-two-settings-cogwheels"></i> -->
+				<?php
+				   if(!empty ($exp_icon_img)){ ?>
+				   <img src="<?php echo esc_url(wp_get_attachment_image_src($exp_icon_img, 'full' )[0]);?>" alt="<?php esc_html_e('Portfolio','portfolio');?>">
+				   <?php }else{ ?>
+					<div class="b-icon">
+						<i class="<?php echo esc_attr($exp_title_icon);?>" aria-hidden="true"></i>
+					</div>
+				<?php } ?>
+			</div>
+			<div class="exp-content text-left">
+				<div class="row">
+				<?php
+					$experience_key =  vc_param_group_parse_atts($experience);
+					if($experience_key):
+					$i=300;
+					foreach($experience_key as $experience_value):
+					$i+=100;				
+				?>
+					<div class="col-md-4 wow fadeInUp" data-wow-duration="1s" data-wow-delay="<?php echo $i;?>ms">
+						<div class="portfolio-exp-single">
+						   <div class="time">
+							<?php
+								if(!empty ( $experience_value['exp_grp_yer'])) { ?>
+									<h3 style= "color: <?php echo esc_attr($experience_value['exp_grp_yer_color']);?>;"><?php echo esc_html__($experience_value['exp_grp_yer']);?></h3>
+								<?php }else{ 
+								echo""; 
+							} ?>
+						   </div>
+						   <?php
+								if(!empty ( $experience_value['exp_grp_title'])) { ?>
+									<h3 style= "color: <?php echo esc_attr($experience_value['exp_title_grp_color']);?>;"><?php echo esc_html__($experience_value['exp_grp_title']);?></h3>
+								<?php }else{ 
+								echo""; 
+							} ?>
+							<?php
+								if(!empty ( $experience_value['exp_grp_desig'])) { ?>
+									<h4 style= "color: <?php echo esc_attr($experience_value['exp_desig_grp_color']);?>;"><?php echo esc_html__($experience_value['exp_grp_desig']);?></h4>
+								<?php }else{ 
+								echo""; 
+							} ?>
+							<?php
+								if(!empty ( $experience_value['exp_grp_desc'])) { ?>
+									<p style= "color: <?php echo esc_attr($experience_value['exp_desc_grp_color']);?>;"><?php echo esc_html__($experience_value['exp_grp_desc']);?></p>
+								<?php }else{ 
+								echo""; 
+							} ?>
+						</div>
+					<!-- /.portfolio-exp-single -->
+					</div>
+				 <!-- /.col-md-4 -->
+				<?php endforeach; endif;?>
+				</div>
+			  <!-- /.row -->
+			</div>
+		   <!-- /.exp-content -->
+		</div>
+	</div>
+</section>
+<!-- experiences end -->
+<?php 
+	return ob_get_clean();
+}
+add_shortcode('experience_section', 'portfolio_exp_section');
+//****** ====================================		
+// Latest Blog Area
+//******* =========================================			
+	function portfolio_blog_section($attr, $content){
+		extract(shortcode_atts(array(
+			'blog_title'			=> '',
+			'blog_title_color'		=> '',
+			'blog_info'    			=> '',
+			'blog_info_color'    	=> '',
+			'blog_icon_img'    		=> '',
+			'blog_title_icon'    	=> '',
+			'page_numbers'			=> '',
+		), $attr)
+	);
+	ob_start(); ?>	
+<!-- blog start -->
+<section id="blog-sec">
+	<div class="portfolio-blog-sec text-center">
+		<div class="container">
+			<div class="portfolio-section-title text-center">
+				<h2 style= "color: <?php echo esc_attr($blog_title_color);?>;" class="wow fadeInUp" data-wow-delay="300ms"><?php echo esc_html__($blog_title);?></h2>
+				<p style= "color: <?php echo esc_attr($blog_info_color);?>;" class="wow fadeInUp" data-wow-delay="400ms"><?php echo esc_html__($blog_info);?></h2></p>
+				<?php
+				   if(!empty ($blog_icon_img)){ ?>
+				   <img src="<?php echo esc_url(wp_get_attachment_image_src($blog_icon_img, 'full' )[0]);?>" alt="<?php esc_html_e('Portfolio','portfolio');?>">
+				   <?php }else{ ?>
+					<div class="b-icon">
+						<i class="<?php echo esc_attr($blog_title_icon);?>" aria-hidden="true"></i></a>
+					</div>
+				<?php } ?>
+			</div>
+			<div class="portfolio-blog-content">
+				<div class="row">
+					<?php
+						$counter = 1;
+						$i=300;
+						$port_blog_post = new WP_Query(array(
+							'post_type' => 'post',
+							'posts_per_page' => $page_numbers,
+							'cat' => 205,
+							'cat_name' => 'blog'
+							//'post__not_in' => get_option( 'sticky_posts' )  // Don't Show Sticky Posts
+						));
+						if($port_blog_post->have_posts()): while($port_blog_post->have_posts()): $port_blog_post->the_post();
+						$counter++;
+						if( $counter % 2 == 0 ) : //It's even
+					?>
+					<div class="col-md-12">
+					<?php $sticky = !is_sticky() ? "non-sticky" : "sticky";?>
+						<article id="post-<?php the_ID(); ?>" <?php post_class($sticky); ?>>
+						<div class="portfolio-blog-single">
+							<div class="col-md-offset-1 col-md-5  wow fadeInUp" data-wow-duration="1s" data-wow-delay="<?php echo $i;?>ms">
+								<div class="post-image">
+									<a href="<?php the_permalink(); ?>" > <?php if(has_post_thumbnail()){the_post_thumbnail();} ?></a>
+							  </div>
+							  <!-- /.post-image -->
+							</div>
+							<div class="col-md-5  wow fadeInUp" data-wow-duration="1s" data-wow-delay="<?php echo $i;?>ms">
+								<div class="post-content">
+									<h5><?php the_category( ' ,' ); ?></h5>
+									<h2><a href="<?php the_permalink(); ?>" ><?php the_title();?></a></h2>
+									<div class="post-meta">
+									<span><?php echo esc_html(get_the_time('F j, Y')); ?></span>
+									</div>
+									<p><?php if( ! has_excerpt() ) {
+										echo esc_html(wp_trim_words( get_the_content(), 25, '...' )); } 
+										else {echo the_excerpt(); }
+									?></p>
+									<a href="<?php the_permalink(); ?>"  class="pfolio-btn"><?php echo esc_html('Read More');?></a>
+									<div class="social-icons">
+									 <a href="http://www.facebook.com/sharer.php?u=<?php the_permalink();?>&amp;t=<?php the_title(); ?>"><i class="fa fa-facebook"></i></a>
+									<a href="http://twitter.com/home/?status=<?php the_title(); ?> - <?php the_permalink(); ?>"><i class="fa fa-twitter"></i></a>
+									<a href="http://www.linkedin.com/shareArticle?mini=true&amp;title=<?php the_title(); ?>&amp;url=<?php the_permalink(); ?>"><i class="fa fa-linkedin"></i></a>
+									<a href="http://pinterest.com/pin/create/button/?url=<?php the_permalink(); ?>&media=<?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); echo $url; ?>"><i class="fa fa-pinterest-p"></i></a>
+									<a href="https://plus.google.com/share?url=<?php the_permalink(); ?>" onclick="javascript:window.open(this.href,'','menubar=no,toolbar=no,resizable=yes,
+									scrollbars=yes,height=600,width=600');return false;">
+										<i class="fa fa-google-plus"></i></a>
+									</div>
+								</div>
+							  <!-- /.post-content -->
+							</div>
+						</div>
+						</article>
+					<!-- /.portfolio-blog-single -->
+					</div>
+					<!-- /.col-md-12 -->
+				 <?php else: //It's odd 
+				 $i+=200; ?>
+				 <div class="col-md-12">
+				<?php $sticky = !is_sticky() ? "non-sticky" : "sticky";?>
+				<article id="post-<?php the_ID(); ?>" <?php post_class($sticky); ?>>
+					<div class="portfolio-blog-single">
+						<div class="col-md-offset-1 col-md-5 wow fadeInUp" data-wow-duration="1s" data-wow-delay="<?php echo $i;?>ms">
+							<div class="post-content">
+								<h5><?php the_category( ' ,' ); ?></h5>
+								<h2><a href="<?php the_permalink();?> "><?php the_title();?></a></h2>
+								<div class="post-meta">
+									<span><?php echo esc_html(get_the_time('F j, Y')); ?></span>
+								</div>
+								<p><?php if( ! has_excerpt() ) {
+										echo esc_html(wp_trim_words( get_the_content(), 25, '...' )); } 
+										else {echo the_excerpt(); }
+								?></p>
+								<a href="<?php the_permalink(); ?>"  class="pfolio-btn"><?php echo esc_html('Read More');?></a>
+								<div class="social-icons">
+								 <a href="http://www.facebook.com/sharer.php?url=<?php the_permalink();?>&amp;t=<?php the_title(); ?>"><i class="fa fa-facebook"></i></a>
+								<a href="http://twitter.com/home/?status=<?php the_title(); ?> - <?php the_permalink(); ?>"><i class="fa fa-twitter"></i></a>
+								<a href="http://www.linkedin.com/shareArticle?mini=true&amp;title=<?php the_title(); ?>&amp;url=<?php the_permalink(); ?>"><i class="fa fa-linkedin"></i></a>
+								
+								
+								<a href="http://pinterest.com/pin/create/button/?url=<?php the_permalink(); ?>&media=<?php $url = esc_url(wp_get_attachment_url(get_post_thumbnail_id())); echo $url; ?>"><i class="fa fa-pinterest-p"></i></a>
+								
+								
+								<a href="https://plus.google.com/share?url=<?php the_permalink(); ?>" onclick="javascript:window.open(this.href,'','menubar=no,toolbar=no,resizable=yes,
+									scrollbars=yes,height=600,width=600');return false;">
+										<i class="fa fa-google-plus"></i></a>
+								</div>
+							</div>
+						  <!-- /.post-content -->
+						</div>
+						<div class="col-md-5 wow fadeInUp" data-wow-duration="1s" data-wow-delay="<?php echo $i;?>ms">
+							<div class="post-image">
+								<a href="<?php the_permalink(); ?>" > <?php if(has_post_thumbnail()){the_post_thumbnail();} ?></a>
+							</div>
+						  <!-- /.post-image -->
+						</div>
+					</div>
+					<!-- /.portfolio-blog-single -->
+					</article>
+				 </div>
+				 <!-- /.col-md-12 -->
+				 <?php endif; endwhile; // If no content, include the "No posts found" template.
+						wp_reset_postdata();
+					else :
+						get_template_part( 'template-parts/content', 'none' );
+						endif;?>		
+				</div>
+			  <!-- /. row -->
+				<div class="view_btn">
+					<?php echo '<a href="' . get_permalink(get_page_by_title('Reading Material')) . '">OUR ARTICLES</a>'; ?>
+				</div>
+		   </div>
+		   <!-- /.blog-content -->
+		</div>
+	</div>
+</section>
+<!-- blog end -->
+<?php 
+	return ob_get_clean();
+}
+add_shortcode('blog_section', 'portfolio_blog_section');
+//***** =====================================		
+// Testimonial Section
+//******* ================================   		
+	function portfolio_testimonial_section($attr, $content){
+		extract(shortcode_atts(array(
+			'test_title'			=> '',
+			'test_title_color'		=> '',
+			'test_sub_title'		=> '',
+			'test_sub_title_color'	=> '',
+			'testi_sec_img'			=> '',
+			// grp
+			'testimonial'			=> '',
+			'test_grp_img'			=> '',
+			'test_grp_name'			=> '',
+			'test_grp_name_clr'		=> '',
+			'test_grp_desc'			=> '',
+			'test_grp_desc_clr'		=> '',
+		), $attr)
+	);
+	ob_start(); ?>	
+<!-- testimonial start -->
+<div id="testimonial">
+	<div class="portfolio-testimonial" style="background: url(<?php echo esc_url(wp_get_attachment_image_src($testi_sec_img, 'full' )[0]);?>)no-repeat center / cover">
+		<div class="container">
+			<div class="tesi-sec-title">
+				<h4 style= "color: <?php echo esc_attr($test_title_color);?>;" class="wow fadeInUp" data-wow-delay="300ms"><?php echo esc_html__($test_title);?></h4>
+				<h2 style= "color: <?php echo esc_attr($test_sub_title_color);?>;" class="wow fadeInUp" data-wow-delay="300ms"><?php echo esc_html__($test_sub_title);?></h2>
+			</div>
+			<div id="portfolio-owl" class="owl-carousel owl-theme">
+			<?php 
+				$testimonial_key = vc_param_group_parse_atts($testimonial); 
+				if($testimonial_key):
+				foreach($testimonial_key as $testimonial_value):
+			?>
+				<div class="portfolio-testimonial-single text-center">
+					<div class="img">
+						<?php
+						if(!empty ( $testimonial_value['test_grp_img'])) { ?>
+							<img src="<?php echo esc_url(wp_get_attachment_image_src( $testimonial_value['test_grp_img'], 'full') [0]); ?>" alt="<?php esc_html_e('portfolio','portfolio');?>">
+						<?php }else{ 
+						echo""; 
+					} ?>
+					</div>
+					<div class="txt-content">
+						<div class="txt">
+							<?php
+							if(!empty ( $testimonial_value['test_grp_desc'])) { ?>
+								<p style= "color:<?php echo esc_attr($testimonial_value['test_grp_desc_clr']);?>;"><?php echo esc_html__($testimonial_value['test_grp_desc']);?></p>
+							<?php }else{ 
+							echo""; 
+						} ?>
+						<?php
+							if(!empty ( $testimonial_value['test_grp_name'])) { ?>
+								<h5 style= "color:<?php echo esc_attr($testimonial_value['test_grp_name_clr']);?>;"><?php echo esc_html__($testimonial_value['test_grp_name']);?></h5>
+							<?php }else{ 
+							echo""; 
+						} ?>
+						</div>
+					</div>
+				</div>
+			  <?php endforeach; endif;?>
+			  <!-- /.portfolio-testimonial-single -->
+			</div>
+		   <!-- /#portfolio-owl -->
+		</div>
+	<div class="overlay"></div>
+	</div>
+</div>
+<!-- testimonial end -->
+<?php 
+	return ob_get_clean();
+}
+add_shortcode('testimonial_section', 'portfolio_testimonial_section');
+//****** ====================================		
+// Contact Us Section
+//******* =========================================
+	function portfolio_contact_section($attr, $content){
+		extract(shortcode_atts(array(
+			'cnt_icon_img'				=> '',
+			'cnt_title_icon'			=> '',
+			'contact_title'				=> '',
+			'contact_title_clr'			=> '',
+			'con_sub_title'				=> '',
+			'con_sub_title_clr'			=> '',
+			'cnt_say_title'				=> '',
+			'cnt_say_title_clr'			=> '',
+			// grp
+			'contact'					=> '',
+			'con_grp_add'				=> '',
+			'con_grp_add_clr'			=> '',
+			'con_grp_opt1'    			=> '',
+			'con_grp_opt2'    			=> '',
+			'con_grp_opt1_clr'    		=> '',
+			'con_grp_opt2_clr'    		=> '',
+		), $attr)
+	);
+	ob_start(); ?>
+<!-- contact start -->
+<section id="contact">
+	<div class="portfolio-contact text-center">
+		<div class="container">
+			<div class="portfolio-section-title text-center">
+				<h2 style= "color:<?php echo esc_attr($contact_title_clr);?>;" class="wow fadeInUp" data-wow-delay="300ms"><?php echo esc_html__($contact_title);?></h2>
+				<p style= "color:<?php echo esc_attr($con_sub_title_clr);?>;" class="wow fadeInUp" data-wow-delay="400ms"><?php echo esc_html__($con_sub_title);?></p>
+				<!-- <i class="flaticon-communication"></i> -->
+				<?php
+				   if(!empty ($cnt_icon_img)){ ?>
+				   <img src="<?php echo esc_url(wp_get_attachment_image_src($cnt_icon_img, 'full' )[0]);?>" alt="<?php esc_html_e('Portfolio','portfolio');?>">
+				   <?php }else{ ?>
+					<div class="b-icon">
+						<i class="<?php echo esc_attr($cnt_title_icon);?>" aria-hidden="true"></i>
+					</div>
+				<?php } ?>
+			</div>
+		   <div class="portfolio-contact-content">
+				<div class="row">
+					<div class="col-md-offset-1 col-md-7 text-left">
+						<div class="top  wow fadeInUp" data-wow-delay="300ms">
+							<h3 style= "color:<?php echo esc_attr($cnt_say_title_clr);?>;"><?php echo esc_html__($cnt_say_title);?></h3>
+							<hr>
+						</div>
+						<div  id="contact-form" class="portfolio-contact-form  wow fadeInUp" data-wow-delay="300ms">
+							<div class="row">
+								<?php 
+									 include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
+									 if ( is_plugin_active( 'contact-form-7/wp-contact-form-7.php' ) ) { 
+										echo  do_shortcode($content);
+									}
+								?>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 text-left  wow fadeInUp" data-wow-delay="300ms">
+						<div class="portfolio-contact-info">
+							<?php 
+								$contact_key = vc_param_group_parse_atts($contact); 
+								if($contact_key):
+								foreach($contact_key as $contact_value):
+							?>
+							<div class="info-single">
+								<?php 
+								if(!empty($contact_value['con_grp_add']) ){ ?>
+									<h4 style= "color:<?php echo esc_attr($contact_value['con_grp_add_clr']);?>;"><?php echo esc_html__($contact_value['con_grp_add']);?></h4>
+								<?php } ?>
+								<?php if(!empty($contact_value['con_grp_opt1']) ){ ?>
+									<p style= "color:<?php echo esc_attr($contact_value['con_grp_opt1_clr']);?>;"><?php echo esc_html__($contact_value['con_grp_opt1']);?></p>
+								<?php } ?>
+								<?php if(!empty($contact_value['con_grp_opt2']) ){ ?>
+									<p style= "color:<?php echo esc_attr($contact_value['con_grp_opt2_clr']);?>;"><?php echo esc_html__($contact_value['con_grp_opt2']);?></p>
+								<?php } ?>
+							</div>
+							<?php endforeach; endif;?>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- contact end -->
+<?php 
+	return ob_get_clean();
+}
+add_shortcode('contact_section', 'portfolio_contact_section');
+//***** =====================================		
+// Map Section
+//******* ================================   		
+	function portfolio_map_section($attr, $content){
+		extract(shortcode_atts(array(
+			//map,
+			'latittude_loc'				=> '23.810332', // Default ID For Static Map
+			'longitude_loc'				=> '90.412518', // Default ID For Static Map
+			'map_zoom'=>'3',
+			//group
+			'branch_group_group'		=>'',
+			'google_branch_title'		=>'',
+			'google_branch_lat'			=>'',
+			'google_branch_lan'			=>'',
+			'google_branch_icon_image'	=>'',
+			// map color
+			'administrative_color'		=>'#f0f0f0',
+			'poi_color'					=>'#f0f0f0',
+			'map_text_color'			=>'#262626',
+			'map_water_color'			=>'#a0a09a',
+			'map_landscape_color'		=>'#ebebeb',
+			'map_highway_color'			=>'#ebebeb',
+			'arterial_road_color'		=>'#f4f4f4',
+			'map_localroad_color'		=>'#ebebeb',
+			'map_transit_color'			=>'#ebebeb',
+		), $attr)
+	);
+	ob_start(); ?>	
+<!-- map start -->
+<div class="map-section">
+	<div id="map" class="portfolio-map map_portfolio"></div>
+	<script>
+	/*----------------------------
+		Gmaps Active Portfolio 
+	------------------------------ */
+	var map;
+	jQuery('.map_portfolio').each(function () {
+		var element = jQuery(this).attr('id');
+		map = new GMaps({
+			el: '#' + element,
+			center: new google.maps.LatLng(<?php echo esc_html($latittude_loc)?>, <?php echo esc_html($longitude_loc)?>),
+			zoom: <?php echo esc_html($map_zoom);?>,
+			scrollwheel: false,
+			styles: [{
+				"featureType": "administrative",
+				"elementType": "all",
+				"stylers": [{
+					"color":"<?php echo esc_attr($administrative_color);?>",
+					"saturation": "-100"
+				}]
+			}, {
+				"featureType": "administrative.province",
+				"elementType": "all",
+				"stylers": [{
+					"visibility": "off"
+				}]
+			}, {
+				"featureType": "landscape",
+				"elementType": "all",
+				"stylers": [{
+					"color":"<?php echo esc_attr($map_landscape_color);?>",
+					"saturation": -100
+				}, {
+					"lightness": 65
+				}, {
+					"visibility": "on"
+				}]
+			}, {
+				"featureType": "poi",
+				"elementType": "all",
+				"stylers": [{
+					"color": "<?php echo esc_attr($poi_color);?>",
+					"saturation": -100
+				}, {
+					"lightness": "50"
+				}, {
+					"visibility": "simplified"
+				}]
+			}, {
+				"featureType": "road",
+				"elementType": "all",
+				"stylers": [{
+					"saturation": "-100"
+				}]
+			}, {
+				"featureType": "road.highway",
+				"elementType": "all",
+				"stylers": [{
+					"visibility": "simplified"
+				}]
+			}, {
+				"featureType": "road.arterial",
+				"elementType": "all",
+				"stylers": [{
+					"color": "<?php echo esc_attr($arterial_road_color);?>",
+					"lightness": "30"
+				}]
+			}, {
+				"featureType": "road.local",
+				"elementType": "all",
+				"stylers": [{
+					"color": "<?php echo esc_attr($map_localroad_color);?>",
+					"lightness": "40"
+				}]
+			}, {
+				"featureType": "transit",
+				"elementType": "all",
+				"stylers": [{
+					"color": "<?php echo esc_attr($map_transit_color);?>",
+					"saturation": -100
+				}, {
+					"visibility": "simplified"
+				}]
+			},{
+				"featureType": "water",
+				"elementType": "geometry",
+				"stylers": [{
+					"color": "<?php echo esc_attr($map_water_color);?>"
+				}, {
+					"lightness": 25
+				}, {
+					"saturation": 97
+				}]
+			}, {
+				"featureType": "water",
+				"elementType": "labels",
+				"stylers": [{
+					"lightness": -25
+				}, {
+					"saturation": -100
+				}]
+			},
+			//custom
+			{
+				"featureType": "road.highway",
+				"elementType": "geometry.fill",
+				"stylers": [
+					{
+						"color": "<?php echo esc_attr($map_highway_color);?>"
+					},
+					{
+						"lightness": 17
+					}
+				]},
+				{
+					"elementType": "labels.text.fill",
+					"stylers": [
+						{
+							"saturation": 36
+						},
+						{
+							"color": "<?php echo esc_attr($map_text_color);?>"
+						},
+						{
+							"lightness": 40
+						}
+					]
+				},
+			]
+		});
+		
+		<?php 
+			$branch_group_gmap = vc_param_group_parse_atts($branch_group_group);
+			
+			if($branch_group_gmap):
+			foreach($branch_group_gmap as $branch_group_gmap_value):
+				
+		?>
+		map.addMarker({
+			lat: <?php echo esc_html($branch_group_gmap_value['google_branch_lat']); ?>,
+			lng: <?php echo esc_html($branch_group_gmap_value['google_branch_lan']); ?>,
+			title: '<?php echo esc_html($branch_group_gmap_value['google_branch_title']); ?>',
+			<?php 
+			if(!empty($branch_group_gmap_value['google_branch_icon_image'])):
+			$google_icon_image = wp_get_attachment_image_src($branch_group_gmap_value['google_branch_icon_image'], 'full');	?>										
+			icon: '<?php echo esc_url($google_icon_image[0]);?>',
+			<?php endif;?>
+			
+		});
+		
+		<?php endforeach; endif;?>
+	});
+	</script>
+</div>
+<!-- map end -->	
+<?php 
+	return ob_get_clean();
+}
+add_shortcode('map_section', 'portfolio_map_section');
