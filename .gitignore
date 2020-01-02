@@ -3,4 +3,4 @@
 
 #except
 !/.gitignore
-!/wp-content
+!wp-content
